@@ -11,7 +11,7 @@ Xemie，即 Chemie([çeˈmiː]; mittel- und norddeutsch auch [ʃeˈmiː]; südde
 ## 本仓库是什么？
 
 📖 本仓库包含无机化学讲义的源码（LaTeX/~~Typst~~）、生成的 PDF 以及相关资料．
-所有内容均基于 **CC BY-NC-SA 4.0** 协议发布：  
+所有内容均基于 **CC-BY-SA-4.0** 协议发布：  
 * 允许分享与改编，但必须署名．
 * 禁止商业用途（例如直接售卖、付费转载）．
 
