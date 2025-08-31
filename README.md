@@ -10,10 +10,12 @@ Xemie，即 Chemie([çeˈmiː]; mittel- und norddeutsch auch [ʃeˈmiː]; südde
 
 ## 本仓库是什么？
 
-📖 本仓库包含无机化学讲义的源码（LaTeX/~~Typst~~）、生成的 PDF 以及相关资料．
+📖 本仓库包含无机化学讲义的源码（$\LaTeX$/~~Typst~~/Markdown[^1]）、生成的 PDF 以及相关资料．
 所有内容均基于 **CC-BY-SA-4.0** 协议发布：  
 * 允许分享与改编，但必须署名．
 * 禁止商业用途（例如直接售卖、付费转载）．
+
+[^1]: Markdown 转 $\LaTeX$ 不太满意，临时还是补上吧（）
 
 👉 详细条款见 [LICENSE](./LICENSE)．
 
