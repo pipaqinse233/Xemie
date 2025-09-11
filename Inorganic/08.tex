@@ -1,0 +1,283 @@
+\chapter{原子结构与元素周期律}
+
+\section{近代原子结构理论的确立}
+
+\subsection{原子结构模型}
+\begin{itemize}
+    \item 1879年：英国人克鲁科斯（Crookes）发现阴极射线
+    \item 1896年：法国人贝克勒（Becquerel）发现铀的放射性
+    \item 1897年：英国人汤姆生（Thomson）测定电子的荷质比，发现电子
+    \item 1898年：波兰人玛丽·居里（Marie Curie）发现钋和镭的放射性
+    \item 1900年：德国人普朗克（Planck）提出量子论
+    \item 1904年：英国人汤姆生（Thomson）提出正电荷均匀分布的原子模型
+    \item 1905年：瑞士人爱因斯坦（Einstein）提出光子论，解释光电效应
+    \item 1909年：美国人密立根（Millikan）用油滴实验测电子的电量
+    \item 1911年：英国人卢瑟福（Rutherford）进行 $\alpha$ 粒子散射实验，提出原子的有核模型
+    \item 1913年：丹麦人玻尔（Bohr）提出玻尔理论，解释氢原子光谱
+\end{itemize}
+
+\subsection{氢原子光谱}
+
+\subsection{玻尔理论}
+
+\section{微观粒子运动的特殊性}
+
+\subsection{微观粒子的波粒二象性}
+1924年，法国年轻的物理学家德·布罗意（de Broglie）指出：\\
+对于光的本质的研究，人们长期以来注重其波动性而忽略其粒子性；\\
+与其相反，对于实物粒子的研究中，人们过分重视其粒子性而忽略了其波动性。
+
+德·布罗意将爱因斯坦的质能联系公式 $E=mc^2$ 和光子的能量公式 $E=h\nu$ 联立，用 $p$ 表示动量，$p=mc$，故有公式 $p=\dfrac{h}{\lambda}$。\\
+德·布罗意认为具有动量 $p$ 的微观粒子，其物质波的波长为 $\lambda = \dfrac{h}{p}$。
+
+研究微观粒子的运动，不能忽略其波动性。微观粒子具有波粒二象性。
+
+\subsection{不确定原理}
+1927年，德国人海森伯格（W. Heisenberg）提出不确定原理，对于具有波粒二象性的微观粒子的运动进行了描述。该原理的数学表达式为 $\Delta x \cdot \Delta p \geqslant \dfrac{h}{2\pi}$ 或 $\Delta x \cdot \Delta v \geqslant \dfrac{h}{2\pi m}$。
+
+原子半径一般以 $\mathrm{\mathring{A}}$ 为单位，即其数量级为 $10^{-10}$ 米。
+
+\subsection{微观粒子运动的统计规律}
+对微观粒子运动的特殊性的研究表明，具有\textbf{波粒二象性}的微观粒子的运动，遵循\textbf{不确定原理}，不能用牛顿力学去研究，而应该去研究微观粒子（电子）运动的\textbf{统计性规律}。
+
+\section{核外电子运动状态的描述}
+
+\subsection{薛定谔方程}
+1926年，奥地利物理学家薛定谔（Schrödinger）提出薛定谔方程。波函数 $\psi$ 就是通过解薛定谔方程得到的。
+
+薛定谔方程：
+\[
+\dfrac{\partial^{2}\psi}{\partial x^{2}} + \dfrac{\partial^{2}\psi}{\partial y^{2}} + \dfrac{\partial^{2}\psi}{\partial z^{2}} + \dfrac{8\pi^{2}m}{h^{2}}(E - V)\psi = 0
+\]
+其中
+\[
+V = -\dfrac{Ze^2}{4\pi \varepsilon_{0} r}, \quad r = \sqrt{x^{2}+ y^{2}+ z^{2}}
+\]
+
+\[
+\begin{aligned}
+x &= r\sin\theta\cos\phi \\
+y &= r\sin\theta\sin\phi \\
+z &= r\cos\theta
+\end{aligned}
+\]
+
+为了保证解的合理性，需引入 $3$ 个参数 $n$、$l$ 和 $m$，且必须满足下列条件：
+\[
+m \in \mathbb{Z}; \quad l \in \mathbb{N}, \text{且 } l \geqslant \left| m \right|; \quad n \in \mathbb{Z}_+, \text{且 } n - 1 \geqslant l
+\]
+
+波函数 $\psi$ 是一个三变量三参数的函数，也是量子力学中用以描述核外电子运动状态的函数，叫做\textbf{原子轨道}（orbital）。\\
+波函数所表示的原子轨道代表核外电子的一种运动状态，是表示电子运动状态的一个函数。\\
+有时波函数要经过线性组合，才能得到有实际意义的原子轨道。\\
+它和经典力学中的轨道（orbit）意义不同，它没有物体在运动中走过的轨迹的含义，它是一种轨道函数，有时称轨函。
+
+\subsection{量子数的概念}
+
+\subsubsection{主量子数 $n$}
+\begin{enumerate}
+    \item 主量子数 $n$ 在光谱学中分别用大写英文字母 K，L，M，N，O，P，…代表。
+    \item 取值：$n \in \mathbb{Z}_+$
+    \item 几何意义：表示核外电子离核的远近，或者电子所在的电子层数。$n=1$ 表示第一层（K层），离核最近。$n$ 越大，离核越远。
+    \item 物理意义：单电子体系，电子的能量由 $n$ 决定。$n$ 的数值大，电子距离原子核远，且具有较高的能量。
+\end{enumerate}
+主量子数 $n$ 只能取 1，2，3，4 等正整数，故能量只有不连续的几种取值，即能量是量子化的。所以 $n$ 称为量子数。
+
+\subsubsection{角量子数 $l$}
+\begin{enumerate}
+    \item 角量子数 $l$ 对应的光谱学符号为 s，p，d，f，g 等。
+    \item 取值：受主量子数 $n$ 的限制，$l \in \mathbb{N}$ 且 $0 \leqslant l < n$。
+    \item 几何意义：角量子数 $l$ 决定原子轨道的形状。
+    \item 物理意义：
+    \begin{enumerate}
+        \item 电子绕核运动时，不仅具有能量，而且具有角动量。\\
+        角动量 $M$ 是矢量，是转动的动量。\\
+        角动量 $M$ 的模 $\left| M \right| = \sqrt{l(l+1)}\dfrac{h}{2\pi}$ 由角量子数 $l$ 决定\\
+        故角动量的数值也是量子化的。
+        \item 在多电子原子中，电子的能量 $E$ 不仅取决于 $n$，而且与 $l$ 有关。即多电子原子中电子的能量由 $n$ 和 $l$ 共同决定。$n$ 相同，$l$ 不同的原子轨道，角量子数 $l$ 越大的，其能量 $E$ 越大。
+    \end{enumerate}
+\end{enumerate}
+同层中（即 $n$ 相同）不同形状的轨道称为亚层，也叫分层。
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline
+        \textbf{平动} & \textbf{转动} \\
+        \hline
+        动量 $p = mv$ & 角动量 $M = J \omega$ \\
+        $\mathrm{kg \cdot m \cdot s^{-1}}$ & $\mathrm{kg \cdot m^2 \cdot s^{-1}}$ \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\subsubsection{磁量子数 $m$}
+\begin{enumerate}
+    \item 取值：$m \in \mathbb{Z}$ 且 $0 \leqslant \left| m \right| \leqslant l$。
+    \item 几何意义：$m$ 决定原子轨道的空间取向。
+    \item 物理意义：$m$ 的取值决定轨道角动量在 $z$ 轴上的分量 $M_{z}= m \dfrac{h}{2\pi}$。
+\end{enumerate}
+磁量子数 $m$ 的不同取值，或者说原子轨道的不同空间取向，一般不影响能量。（磁场、晶体场例外，因此叫做\textbf{磁}量子数）
+
+3 种不同取向的 2p 轨道能量相同。我们说这 3 个原子轨道是能量简并轨道，或者说 2p 轨道是 3 重简并的。
+
+\subsubsection{自旋磁量子数 $m_\mathrm{s}$}
+电子既有围绕原子核的旋转运动，也有自身的旋转，称为电子的自旋。\\
+因为电子有自旋，所以电子具有自旋角动量。自旋角动量沿外磁场方向上的分量 $M_\mathrm{s} = m_\mathrm{s}\dfrac{h}{2\pi}$。\\
+$m_\mathrm{s} = \pm \dfrac{1}{2}$，常用 $\uparrow$ 和 $\downarrow$ 表示。
+
+\subsection{用图形描述核外电子的运动状态}
+
+\subsubsection{电子云图}
+电子在核外空间某个区域内出现的机会称为\textbf{概率}。\\
+电子在空间某单位体积内出现的概率称为\textbf{概率密度}。\\
+$\left| \psi \right| ^2$ 表示空间一点 $P(r,~\theta,~\phi)$ 处单位体积内电子出现的概率，即该点处的概率密度，据此可以计算电子在某个已知区域内出现的概率。\\
+\textbf{电子云就是概率密度的形象化图示}，也可以说电子云图是 $\left| \psi \right| ^2$ 的图像。
+
+除了电子云图外，还有两种概率密度分布的表示法。\\
+将核外空间中电子出现概率密度相等的点用曲面连接起来，这样的曲面叫做\textbf{等概率密度面}。\\
+画出一个等概率密度面，使电子在该球面以内出现的概率占了绝大部分,如占 $95\%$，就得到\textbf{界面图}。
+
+\subsubsection{径向分布图}
+\begin{enumerate}
+    \item 径向概率密度分布图（概率密度 $\left| \psi \right| ^2$）
+    \item 径向概率分布图（径向概率分布函数 $D(r)$）
+\end{enumerate}
+
+\subsubsection{角度分布图}
+\begin{enumerate}
+    \item 波函数的角度分布图
+    \item 概率密度的角度分布图
+\end{enumerate}
+
+“$+$”“$-$”作为波函数的符号，它表示原子轨道的对称性，因此在讨论化学键的形成时有重要作用。
+
+\section{核外电子的排布}
+
+\subsection{影响轨道能量的因素}
+多电子体系中，电子不仅受到原子核的作用，而且受到其余电子的作用。故能量关系复杂。所以多电子体系中，能量不只由主量子数 $n$ 决定。
+
+\textbf{屏蔽效应}：内层电子对外层某单电子的排斥作用。这可以考虑成对核电荷数 $Z$ 的抵消或屏蔽，使核有效电荷数 $Z^*$ 小于 $Z$。\\
+中和后的核电荷 $Z$ 变成了有效核电荷 $Z^*$。$Z^* = Z - \sigma$。\\
+$\sigma$ 为屏蔽常数。
+
+\textbf{Slater 规则}：
+\begin{enumerate}
+    \item 分组：
+    \begin{enumerate}
+        \item 1s
+        \item 2s 2p
+        \item 3s 3p
+        \item 3d
+        \item 4s 4p
+        \item 4d
+        \item 4f
+    \end{enumerate}
+    \item 同组 $\sigma = 0.35$（1s 组两电子间 $\sigma = 0.30$）
+    \item $(n\mathrm{s}~n\mathrm{p})$ 组：$(n-1)$ 层 $\sigma = 0.85$，$(n-1)$ 层及以内 $\sigma = 1.00$
+    \item $(n\mathrm{d})$ 或 $(n\mathrm{f})$ 组：左侧均 $\sigma = 1.00$
+\end{enumerate}
+
+由于径向分布的不同，$l$ 不同的电子钻穿到核附近回避其他电子屏蔽的能力不同，从而使自身的能量不同。\\
+这种作用称为\textbf{钻穿效应}。
+
+在一些情况下，$n$ 和 $l$ 均不相同时，$n$ 大的电子的能量，反而低于 $n$ 小的电子的能量。这就是所谓\textbf{能级交错现象}。
+
+\subsection{多电子原子的能级}
+
+\subsubsection{Pauling 的原子轨道能级图}
+徐光宪的近似规则或 \textbf{$(n + 0.7l)$ 规则}：对于一个能级，其 $(n + 0.7l)$ 值越大，则能量越高；而且该能级所在能级组的组数就是 $(n + 0.7l)$ 的整数部分。
+
+\subsubsection{科顿原子轨道能级图}
+原子轨道能量随原子序数而变化的图。
+
+\subsection{核外电子的排布}
+电子在核外的排布应遵循三个原则即能量最低原理、Pauli 原理和 Hund 规则。
+
+\subsubsection{排布规则}
+
+\paragraph{能量最低原理}
+电子先填充能量低的轨道，后填充能量高的轨道。尽可能保持体系的能量最低。
+
+\paragraph{Pauli 不相容原理}
+即同一原子中没有运动状态完全相同的电子，同一原子中没有四个量子数完全对应相同的两个电子。\\
+于是每个原子轨道中只能容纳两个自旋方向相反的电子。
+
+\paragraph{Hund 规则}
+电子在能量简并的轨道中尽量以相同自旋方式成单排布。\\
+简并的各轨道保持一致，则体系的能量低。
+
+作为洪特规则的发展，能量简井的等价轨道\textbf{全充满}、\textbf{半充满}或\textbf{全空}的状态是比较稳定的，尤其简并度高的轨道更是如此。
+
+\subsubsection{电子的排布}
+核外电子排布的三原则，只是一般的规律。因此，对于某一元素原子的电子排布情况，要以光谱实验结果为准。特例：
+
+% \begin{table}[h]
+%     \centering
+%     \begin{tabular}{|c|c|c|}
+%         \hline
+%         \textbf{原子序数} & \textbf{元素符号} & \textbf{电子结构式} \\
+%         \hline
+%         24 & $\ce{Cr}$ & $[\ce{Ar}]3\mathrm{d}^54\mathrm{s}^1$ \\
+%         29 & $\ce{Cu}$ & $[\ce{Ar}]3\mathrm{d}^{10}4\mathrm{s}^1$ \\
+%         41 & $\ce{Nb}$ & $[\ce{Kr}]4\mathrm{d}^45\mathrm{s}^1$ \\
+%         42 & $\ce{Mo}$ & $[\ce{Kr}]4\mathrm{d}^55\mathrm{s}^1$ \\
+%         44 & $\ce{Ru}$ & $[\ce{Kr}]4\mathrm{d}^75\mathrm{s}^1$ \\
+%         45 & $\ce{Rh}$ & $[\ce{Kr}]4\mathrm{d}^85\mathrm{s}^1$ \\
+%         46 & $\ce{Pd}$ & $[\ce{Kr}]4\mathrm{d}^{10}5\mathrm{s}^0$ \\
+%         47 & $\ce{Ag}$ & $[\ce{Kr}]4\mathrm{d}^{10}5\mathrm{s}^1$ \\
+%         \hline
+%     \end{tabular}
+% \end{table}
+
+\section{元素周期表}
+
+\subsection{元素的周期}
+从各元素原子的电子层结构可知，对应于主量子数 $n$ 的每一个数值，就有一个能级组，也同时有一个周期。所以元素周期表中的每一个周期对应一个能级组。元素的原子核外电子所处的最高的能级组数，就是元素所在的周期数。
+
+\subsection{元素的族}
+价层电子一般指在化学反应中能够发生变化的电子，有时也称为价电子。
+
+\subsection{元素的分区}
+根据元素最后一个电子填充的能级不同，可以将元素周期表中的元素分为 5 个区，实际上是把价层电子构型相似的元素集中分在同一个区。
+\begin{enumerate}
+    \item s 区
+    \item p 区
+    \item d 区
+    \item ds 区
+    \item f 区
+\end{enumerate}
+
+\section{元素基本性质的周期性}
+
+\subsection{原子半径}
+
+\subsubsection{原子半径的定义}
+
+\paragraph{共价半径}
+同种元素的两个原子，以共用两个电子的共价单键相连时核间距的一半，为共价半径。
+
+\paragraph{金属半径}
+金属晶体中，金属原子被视为刚性球体，彼此相切，其核间距的一半，为金属半径。\\
+金属半径用 $r_{\text{金}}$ 表示。
+
+\paragraph{范德华半径}
+单原子分子，原子间靠范德华力，即分子间作用力结合，因此无法得到共价半径。\\
+因此定义低温下稀有气体以晶体存在时，两个原子之间距离的一半为范德华半径。
+
+\subsubsection{原子半径的变化规律}
+\begin{enumerate}
+    \item 同周期
+    \begin{enumerate}
+        \item 从左向右，随着\textbf{核电荷数的增加}，\textbf{原子核对外层电子的吸引力也增加}，使原子半径逐渐\textbf{减小}。
+        \item 从左向右，随着\textbf{核外电子数的增加}，\textbf{电子间的相互排斥增强}，使得原子半径逐渐\textbf{增大}。\\
+        这是两个作用相反的影响因素。但是，由于增加的电子不足以完全屏蔽增加的核电荷，因此从左向右有效核电荷数逐渐增加，原子半径逐渐减小。\\
+        有较大的屏蔽作用的电子构型（如 $\mathrm{d}^{10}$）
+    \end{enumerate}
+\end{enumerate}
+
+\subsection{电离能}
+
+\subsection{电子亲和能}
+
+\subsection{电负性}
