@@ -1,0 +1,327 @@
+\chapter{化学动力学浅述与化学平衡}
+
+\section*{化学反应的可能性与现实性}
+\begin{itemize}
+\item \textbf{可能性}：反应是否自发（第二章内容）
+\item \textbf{现实性}：反应速率快慢（第三章内容）
+\item 关键结论：\textbf{化学反应的可能性 \(\neq\) 现实性}
+\end{itemize}
+
+示例反应:
+
+\begin{enumerate}
+\item \ce{HCl + NaOH = NaCl + H2O}，\(\Delta_\text{r} G_\text{m}^\ominus = \SI{-79.9}{kJ.mol^{-1}}\)（自发，但需考虑速率）
+\item \ce{C (\text{石墨}) + O2(g) = CO2(g)}，\(\Delta_\text{r} G_\text{m}^\ominus = \qty{-394.4}{kJ.mol^{-1}}\)（自发，但常温下速率极慢）
+\end{enumerate}
+
+\section{化学反应速率的表示方法及测定}
+\subsection{化学反应速率的定义}
+单位时间内反应物或生成物浓度的变化量。
+
+\subsection{化学反应速率的数学表达式}
+\subsubsection{单分子反应（\ce{A -> B}）}
+\begin{itemize}
+\item 生成物速率：$v = \dfrac{\mathrm{d}c_{\text{B}}}{\mathrm{d}t}$
+\item 反应物速率：$v = -\dfrac{\mathrm{d}c_{\text{A}}}{\mathrm{d}t}$
+\item 单位：$\si{mol.L^{-1}.s^{-1}}$
+\end{itemize}
+
+\subsubsection{一般反应（\ce{a A + b B <=> g G + h H}）}
+\paragraph{瞬时速率}
+\[
+v = \frac{1}{\nu_{\text{B}}} \frac{\mathrm{d}c_{\text{B}}}{\mathrm{d}t} 
+= -\frac{1}{a} \frac{\mathrm{d}c_{\text{A}}}{\mathrm{d}t} 
+= -\frac{1}{b} \frac{\mathrm{d}c_{\text{B}}}{\mathrm{d}t} 
+= \frac{1}{g} \frac{\mathrm{d}c_{\text{G}}}{\mathrm{d}t} 
+= \frac{1}{h} \frac{\mathrm{d}c_{\text{H}}}{\mathrm{d}t}
+\]
+
+\paragraph{平均速率}
+\[
+\bar{v} = \frac{1}{\nu_{\text{B}}} \left.\frac{\Delta c_{\text{B}}}{\Delta t}\right|_{t_1 \to t_2} 
+\approx \frac{1}{\nu_{\text{B}}} \left.\frac{\mathrm{d}c_{\text{B}}}{\mathrm{d}t}\right|_{t_1}
+\]
+
+\section{反应速率理论与反应机理简述}
+\subsection{碰撞理论}
+\subsubsection{有效碰撞与活化分子}
+\begin{itemize}
+\item 只有具有足够能量的分子在特定方位上碰撞才能发生反应，称为\textbf{有效碰撞}
+\item 能发生有效碰撞的分子称为\textbf{活化分子}
+\item 分子必须具有\textbf{足够能量}和\textbf{正确取向}才能发生有效碰撞
+\end{itemize}
+
+\subsubsection{活化能概念}
+\begin{itemize}
+\item \textbf{活化能}（$E_a$）：活化分子的平均能量与体系分子平均能量之差
+\item 活化能是化学反应必须克服的\textbf{能量壁垒}
+\item 活化能大小决定了反应速率的快慢
+\end{itemize}
+
+\subsubsection{活化能与反应焓变关系}
+\[
+\Delta_r H_m^\ominus = E_{a,\text{正}} - E_{a,\text{逆}}
+\]
+其中：
+\begin{itemize}
+\item $E_{a,\text{正}}$：正反应活化能
+\item $E_{a,\text{逆}}$：逆反应活化能
+\end{itemize}
+
+\subsection{过渡状态理论}
+\subsubsection{过渡态形成过程}
+
+\begin{enumerate}
+\item 反应物分子靠近
+\item 价键重排
+\item 形成\textbf{过渡态（活化配合物）}
+\item 转化为产物
+\end{enumerate}
+
+\subsubsection{过渡态特征}
+\begin{itemize}
+\item 过渡态处于势能面的\textbf{鞍点}位置
+\item 过渡态寿命极短，无法分离检测
+\item 过渡态能量高于反应物和产物能量
+\end{itemize}
+
+\subsubsection{理论计算方法}
+\begin{enumerate}
+\item 构建反应势能面
+\item 确定鞍点位置及能量
+\item 计算反应路径和能垒
+\end{enumerate}
+
+\subsection{反应机理分类}
+\subsubsection{基元反应特征}
+\begin{itemize}
+\item 反应物分子一步直接转化为产物分子
+\item 反应级数与化学计量数一致
+\item 速率方程可由质量作用定律直接写出
+\end{itemize}
+
+\subsubsection{非基元反应特征}
+\begin{itemize}
+\item 反应物分子需经多步基元反应才能生成产物
+\item 反应级数需通过实验测定
+\item 总反应速率由最慢的基元反应（速率控制步）决定
+\end{itemize}
+
+\subsubsection{反应机理确定方法}
+\begin{itemize}
+\item 通过实验测定反应级数
+\item 检测反应中间体
+\item 同位素标记法追踪反应路径
+\item 理论计算验证反应路径
+\end{itemize}
+
+\subsection{反应速率理论比较}
+\begin{table}[ht]
+\centering
+\caption*{碰撞理论与过渡状态理论比较}
+\begin{tabular}{lcc}
+\toprule
+特征 & 碰撞理论 & 过渡状态理论 \\
+\midrule
+理论基础 & 气体分子运动论 & 量子力学、统计力学 \\
+关键概念 & 有效碰撞、活化分子 & 过渡态、活化配合物 \\
+能量描述 & 活化能 $E_a$ & 势能面、能垒 \\
+适用范围 & 气相简单反应 & 各种相态的反应 \\
+计算精度 & 半定量 & 可进行定量计算 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{影响反应速率的因素}
+\subsection{浓度对反应速率的影响}
+\subsubsection{质量作用定律适用范围}
+\begin{itemize}
+\item 仅适用于\textbf{基元反应}
+\item 非基元反应需通过实验测定速率方程
+\end{itemize}
+
+\subsubsection{基元反应速率方程}
+对于基元反应 \ce{a A + b B -> c C + d D}：
+\[
+v = k \cdot c_{\ce{A}}^a \cdot c_{\ce{B}}^b
+\]
+\begin{itemize}
+\item $k$：速率常数，与温度、催化剂有关
+\item $a, b$：反应级数，等于化学计量数
+\item 总反应级数：$a + b$
+\end{itemize}
+
+\subsubsection{非基元反应速率特征}
+\begin{itemize}
+\item 速率方程中浓度项的指数与化学计量数不一定相等
+\item 反应级数需通过实验测定
+\item 可为整数或分数
+\end{itemize}
+
+\subsubsection{反应级数定义}
+\begin{itemize}
+\item 速率方程中各浓度项指数的代数和
+\item 必须通过实验确定
+\item 不可直接根据总反应方程式书写速率方程
+\end{itemize}
+
+\subsection{温度对反应速率的影响}
+\subsubsection{阿累尼乌斯公式表达形式}
+\paragraph{指数形式}
+\[
+k = Z \exp\left(-\frac{E_a}{RT}\right)
+\]
+\paragraph{对数形式}
+\[
+\ln k = -\frac{E_a}{RT} + \ln Z
+\]
+\[
+\lg k = -\frac{E_a}{2.303RT} + \lg Z
+\]
+
+\subsubsection{温度影响规律}
+\begin{itemize}
+\item 温度升高，反应速率增大
+\item 活化能越大，温度对速率影响越显著
+\item 低温区温度变化对速率影响更明显
+\end{itemize}
+
+\subsubsection{不同温度速率常数关系}
+\[
+\ln\frac{k_2}{k_1} = \frac{E_a}{R}\left(\frac{1}{T_1} - \frac{1}{T_2}\right)
+\]
+\begin{itemize}
+\item 浓度不变时，$\dfrac{v_2}{v_1} = \dfrac{k_2}{k_1}$
+\item 用于计算不同温度下的速率常数比
+\end{itemize}
+
+\subsection{催化剂对反应速率的影响}
+\subsubsection{催化剂作用机理}
+\begin{itemize}
+\item 改变反应历程，降低活化能
+\item 增加活化分子百分数
+\item 不改变反应热力学参数
+\end{itemize}
+
+\subsubsection{催化剂核心特征}
+\begin{itemize}
+\item 反应前后化学性质、组成、数量不变
+\item 同等加速正逆反应速率
+\item 不改变平衡常数 $K_T^\ominus$
+\item 只作用于热力学可行的反应
+\end{itemize}
+
+\subsubsection{催化剂选择性}
+\begin{itemize}
+\item 不同反应需要不同催化剂
+\item 同一反应物在不同催化剂作用下生成不同产物
+\item 生物催化剂（酶）具有高度选择性
+\end{itemize}
+
+\section{化学平衡与移动}
+\subsection{可逆反应与化学平衡}
+\subsubsection{可逆反应定义}
+\begin{itemize}
+\item 在一定条件下，既能正向进行也能逆向进行的反应
+\item 所有化学反应在某种程度上都是可逆的
+\item 示例：\ce{NO2(g) + SO2(g) <=> NO(g) + SO3(g)}
+\end{itemize}
+
+\subsubsection{化学平衡态标志}
+\begin{itemize}
+\item 宏观标志：各物质浓度（或分压）不再随时间变化
+\item 微观标志：正反应速率等于逆反应速率（$v_{\text{正}} = v_{\text{逆}} \neq 0$）
+\item 热力学标志：$\Delta_{\text{r}} G_{\text{m}} = 0$
+\end{itemize}
+
+\subsubsection{化学平衡基本特征}
+\begin{itemize}
+\item 动态平衡：反应仍在进行，但净结果为零
+\item 限度性：可逆反应进行的最大限度
+\item 条件性：外界条件变化时平衡会发生移动
+\end{itemize}
+
+\subsection{标准平衡常数}
+\subsubsection{标准平衡常数定义}
+\[
+\Delta_{\text{r}} G_{\text{m}}^\ominus(T) = -RT \ln K_T^\ominus
+\]
+\begin{itemize}
+\item $K_T^\ominus$：标准平衡常数，仅与温度有关
+\item $\Delta_{\text{r}} G_{\text{m}}^\ominus$：标准摩尔吉布斯自由能变
+\end{itemize}
+
+\subsubsection{标准平衡常数表达式}
+对于反应 \ce{a A(aq) + b B(g) <=> c C(aq) + d D(s)}：
+\[
+K_T^\ominus = \frac{\left(\dfrac{m_{\text{C}}}{m^\ominus}\right)^c}{\left(\dfrac{m_{\text{A}}}{m^\ominus}\right)^a \cdot \left(\dfrac{p_{\text{B}}}{p^\ominus}\right)^b}
+\]
+\begin{itemize}
+\item $m$：质量摩尔浓度，$m^\ominus = \SI{1}{mol.kg^{-1}}$
+\item $p$：气体分压，$p^\ominus = \SI{100}{kPa}$
+\item 纯固体、纯液体不写入表达式
+\end{itemize}
+
+\subsubsection{标准平衡常数性质}
+\begin{itemize}
+\item 无量纲（量纲为1）
+\item 仅与温度有关，与起始浓度/分压无关
+\item 数值与反应方程式写法有关
+\item $K_T^\ominus$ 越大，反应进行越彻底
+\end{itemize}
+
+\subsubsection{平衡常数计算方法}
+\begin{enumerate}
+\item 由平衡浓度/分压直接计算
+\item 由 $\Delta_{\text{r}} G_{\text{m}}^\ominus(T)$ 计算
+\item 由已知反应的 $K_T^\ominus$ 推导
+\end{enumerate}
+
+\subsection{影响化学平衡移动的因素}
+\subsubsection{浓度对平衡的影响}
+\begin{itemize}
+\item 增大反应物浓度：$Q < K_T^\ominus$，平衡右移
+\item 增大生成物浓度：$Q > K_T^\ominus$，平衡左移
+\item 温度不变时 $K_T^\ominus$ 不变
+\end{itemize}
+
+\subsubsection{总压力对平衡的影响}
+对于气相反应 \ce{a A(g) + b B(g) <=> c C(g) + d D(g)}：
+\[
+Q = K_T^\ominus \cdot m^{\Delta n}, \quad \Delta n = (c+d) - (a+b)
+\]
+\begin{itemize}
+\item 总压增大：平衡向气体分子数减少的方向移动
+\item 总压减小：平衡向气体分子数增多的方向移动
+\item $\Delta n = 0$：压力变化不影响平衡
+\end{itemize}
+
+\subsubsection{惰性气体对平衡的影响}
+\begin{itemize}
+\item 恒定容积：各物质分压不变，平衡不移动
+\item 恒定总压：系统体积增大，各物质分压减小
+\item $\Delta n \neq 0$：平衡向气体分子数增多的方向移动
+\end{itemize}
+
+\subsubsection{温度对平衡的影响}
+\paragraph{范特霍夫方程}
+\[
+\ln \frac{K_{T_2}^\ominus}{K_{T_1}^\ominus} = \frac{\Delta_{\text{r}} H_{\text{m}}^\ominus}{R} \times \frac{T_2 - T_1}{T_1 T_2}
+\]
+
+\paragraph{温度影响规律}
+\begin{itemize}
+\item 升温：平衡向吸热方向移动
+\item 降温：平衡向放热方向移动
+\item $K_T^\ominus$ 随温度变化
+\end{itemize}
+
+\subsubsection{平衡移动判据}
+\[
+\Delta_{\text{r}} G_{\text{m}}(T) = RT \ln \frac{Q}{K_T^\ominus}
+\]
+\begin{itemize}
+\item $Q < K_T^\ominus$：$\Delta_{\text{r}} G_{\text{m}} < 0$，反应正向进行
+\item $Q = K_T^\ominus$：$\Delta_{\text{r}} G_{\text{m}} = 0$，处于平衡状态
+\item $Q > K_T^\ominus$：$\Delta_{\text{r}} G_{\text{m}} > 0$，反应逆向进行
+\end{itemize}

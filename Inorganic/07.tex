@@ -1,0 +1,149 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{siunitx}
+\usepackage{chemformula}
+
+\begin{document}
+
+\section{原子结构}
+\subsection{原子光谱与玻尔理论}
+
+\subsubsection{原子结构理论发展历程}
+\begin{itemize}
+    \item \textbf{1803年 Dalton 原子论}：提出原子不可再分概念
+    \item \textbf{1897年 Thomson 模型}：阴极射线实验测得电子荷质比 $\frac{e}{m_e} = \SI{1.758e11}{\coulomb\per\kilo\gram}$
+    \item \textbf{1909年 Millikan 油滴实验}：测定电子电量 $e = \SI{1.592e-19}{\coulomb}$
+    \item \textbf{1911年 Rutherford 模型}：$\alpha$ 粒子散射实验提出核式结构
+\end{itemize}
+
+\subsubsection{氢原子光谱特征}
+\begin{itemize}
+    \item \textbf{Rydberg 公式}：
+        $\tilde{\nu} = R\left(\frac{1}{n_1^2} - \frac{1}{n_2^2}\right)$
+    \item \textbf{里德堡常数}：$R = \SI{1.097e7}{\per\meter}$
+    \item \textbf{光谱类型}：线状光谱，不连续特征
+\end{itemize}
+
+\subsubsection{玻尔理论核心内容}
+\begin{itemize}
+    \item \textbf{普朗克量子假说}：$E = h\nu$，$h = \SI{6.626e-34}{\joule\second}$
+    \item \textbf{轨道量子化条件}：
+        \begin{align*}
+        r &= \SI{52.9}{\pico\meter} \times \frac{n^2}{Z} \\
+        E &= -\SI{21.8e-19}{\joule} \times \frac{Z^2}{n^2}
+        \end{align*}
+    \item \textbf{能级跃迁公式}：$\Delta E = E_2 - E_1 = h\nu$
+\end{itemize}
+
+\subsubsection{微观粒子波粒二象性}
+\begin{itemize}
+    \item \textbf{德布罗意关系}：$\lambda = \frac{h}{p} = \frac{h}{mv}$
+    \item \textbf{海森堡不确定性原理}：$\Delta x \cdot \Delta p \geq \frac{h}{4\pi}$
+    \item \textbf{实验验证}：戴维森-革末电子衍射实验
+\end{itemize}
+
+\subsection{电子在核外运动状态的描述}
+
+\subsubsection{薛定谔方程基本形式}
+\[
+\frac{\partial^2 \psi}{\partial x^2} + \frac{\partial^2 \psi}{\partial y^2} + \frac{\partial^2 \psi}{\partial z^2} + \frac{8\pi^2 m}{h^2}(E - V)\psi = 0
+\]
+
+\subsubsection{四个量子数及其物理意义}
+\begin{itemize}
+    \item \textbf{主量子数 $n$}：决定电子层和主要能量
+    \item \textbf{角量子数 $l$}：决定轨道形状和角动量
+        $|M| = \frac{h}{2\pi}\sqrt{l(l+1)}$
+    \item \textbf{磁量子数 $m$}：决定空间取向，$m = 0,\pm1,\dots,\pm l$
+    \item \textbf{自旋量子数 $m_s$}：$m_s = \pm\frac{1}{2}$
+\end{itemize}
+
+\subsubsection{原子轨道与电子云}
+\begin{itemize}
+    \item \textbf{概率密度}：$|\psi|^2$ 表示电子出现概率密度
+    \item \textbf{径向分布函数}：$D(r) = 4\pi r^2 |\psi|^2$
+    \item \textbf{玻尔半径}：$a_0 = \SI{52.9}{\pico\meter}$
+\end{itemize}
+
+\subsubsection{电子层结构规律}
+\begin{center}
+\begin{tabular}{ccccc}
+\toprule
+$n$ & 亚层 & 轨道数 & 电子层容量 & 最大电子数 \\
+\midrule
+1 & $1s$ & 1 & $n^2$ & $2n^2$ \\
+2 & $2s,2p$ & 4 & 4 & 8 \\
+3 & $3s,3p,3d$ & 9 & 9 & 18 \\
+4 & $4s,4p,4d,4f$ & 16 & 16 & 32 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{多电子原子结构}
+
+\subsubsection{核外电子排布三原则}
+\begin{itemize}
+    \item \textbf{泡利不相容原理}：同一轨道最多两个电子，自旋相反
+    \item \textbf{能量最低原理}：电子优先占据能量最低轨道
+    \item \textbf{洪特规则}：简并轨道电子分占且自旋平行
+\end{itemize}
+
+\subsubsection{能级组与周期关系}
+\begin{center}
+\begin{tabular}{cccc}
+\toprule
+能级组 & 包含轨道 & 电子容量 & 对应周期 \\
+\midrule
+1 & $1s$ & 2 & 第一周期 \\
+2 & $2s,2p$ & 8 & 第二周期 \\
+3 & $3s,3p$ & 8 & 第三周期 \\
+4 & $4s,3d,4p$ & 18 & 第四周期 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsubsection{元素周期表分区}
+\begin{center}
+\begin{tabular}{ccc}
+\toprule
+分区 & 族 & 价电子构型 \\
+\midrule
+$s$区 & \text{I A}、\text{II A} & $ns^{1-2}$ \\
+$p$区 & \text{III A}$\sim$\text{VII A}、0族 & $ns^2 np^{1-6}$ \\
+$d$区 & \text{III B}$\sim$\text{VII B}、\text{VIII}族 & $(n-1)d^{1-8} ns^{1-2}$ \\
+$ds$区 & \text{I B}、\text{II B} & $(n-1)d^{10} ns^{1-2}$ \\
+$f$区 & 镧系、锕系 & $(n-2)f^{0-14} (n-1)d^{0-1} ns^2$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{原子的基本性质}
+
+\subsubsection{有效核电荷计算}
+\begin{itemize}
+    \item \textbf{屏蔽效应公式}：$Z' = Z - \sum\sigma$
+    \item \textbf{计算示例}：
+        \begin{itemize}
+            \item \ch{K}：$Z' = 19 - 16.8 = 2.2$
+            \item \ch{Ca}：$Z' = 20 - 17.15 = 2.85$
+            \item \ch{Sc}：$Z' = 21 - 17.9 = 3.00$
+        \end{itemize}
+\end{itemize}
+
+\subsubsection{原子半径变化规律}
+\begin{itemize}
+    \item \textbf{定义方式}：共价半径、金属半径、范德华半径
+    \item \textbf{周期变化}：同一周期从左到右半径减小
+    \item \textbf{族变化}：同一主族从上到下半径增大
+    \item \textbf{镧系收缩}：$5\rightarrow6$ 周期半径相近
+\end{itemize}
+
+\subsubsection{电离能与电负性}
+\begin{itemize}
+    \item \textbf{第一电离能}：$\ch{A(g) -> A^+(g) + e^-}$
+    \item \textbf{电负性标度}：Pauling标度，\ch{F}最大($3.98$)，\ch{Cs}最小($0.79$)
+    \item \textbf{金属性判据}：电负性通常小于$2.0$为金属
+\end{itemize}
+
+\end{document}

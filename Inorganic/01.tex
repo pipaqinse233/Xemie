@@ -31,6 +31,16 @@ $$\boxed{v \propto \sqrt{\dfrac{1}{M}}}$$
 \subsubsection{气体分子的速率分布}
 1859 年，英国物理学家 Maxwell 用概率论的方法推导出了计算气体分子运动速率分布的公式，讨论了分子运动速率的分布。后来，奥地利人 L. Boltzmann 用统计力学的方法也得到了相同的结果，从而进一步验证了 Maxwell 的速率分布公式。
 
+速率分布函数满足归一化条件：$$\int_{0}^{\infty} f(v) {\rm d}v = 1$$
+
+\begin{itemize}
+    \item 最概然速率：$v_p = 1.41\sqrt{\dfrac{RT}{M}}$
+    \item 算术平均速率：$\bar{v} = 1.60\sqrt{\dfrac{RT}{M}}$
+    \item 方均根速率：$\sqrt{\overline{v^2}} = 1.73\sqrt{\dfrac{RT}{M}}$
+\end{itemize}
+
+比例关系：$$\sqrt{\overline{v^2}}:\bar{v}:v_p = 1.73:1.60:1.41$$
+
 \subsubsection{气体分子的能量分布}
 在无机化学中，常用下面的近似公式来计算和讨论能量的分布。
 \[
@@ -92,24 +102,107 @@ Raoult 定律 $\boxed{p=p^*x({\rm A})}$
 
 难挥发性非电解质稀溶液凝固点降低值 $\Delta T_{\mathrm{f}}=T_{\mathrm{f}}^*-T_{\mathrm{f}}$，与其饱和蒸气压下降的数值成正比，记 $k_{\mathrm{f}}$ 为\textbf{凝固点降低常数}，得\textbf{凝固点降低公式} $$\boxed{\Delta T_{\mathrm{f}}=k_{\mathrm{f}}b}$$
 
+注：$k_{\mathrm{b}}$、$k_{\mathrm{f}}$ 仅与溶剂本性有关，与溶质种类无关；$\Delta T_{\mathrm{b}}$、$\Delta T_{\mathrm{f}}$ 与溶质粒子总数有关，可用于测定难挥发非电解质分子量。
+
 \subsubsection{渗透压}
 溶剂分子透过半透膜进入溶液的现象，称为\textbf{渗透现象}。渗透平衡时两侧液面高度差造成的静压称为溶液的\textbf{渗透压}。
 
-Van’t Hoff 指出 $$\boxed{\varPi V = nRT}$$
+Van't Hoff 指出 $$\boxed{\varPi V = nRT}$$ 即 $$\boxed{\varPi = c_{\rm B}RT}$$
+
+渗透压对浓度敏感，低浓度即可产生显著渗透压，如 $c_{\rm B}=0.00100\ \mathrm{mol·L^{-1}}$ 时，$\varPi=2478\ \mathrm{Pa}$。
 
 \section{固体和晶体}
 \subsection{晶体和非晶体}
 \subsubsection{非晶体的特性}
+原子排列紊乱分布，无明显固定熔点，受热时逐渐软化；物理性质表现为各向同性。
+
 \subsubsection{晶体的特性}
+原子呈规则周期性排列，有固定熔点；物理性质（如光学、力学性质）具有各向异性。
 
 \subsection{对称性}
 \subsubsection{旋转和旋转轴}
+旋转是晶体常见对称操作，绕旋转轴旋转一定角度后晶体复原。宏观对称旋转轴仅存在1、2、3、4、6次轴，无5次或更高次轴。
+
 \subsubsection{反映和镜面}
+镜面（对称面，记为$m$）是将晶体分为互为镜像的两部分的平面，通过镜面的反映操作后晶体复原。
+
 \subsubsection{反演和对称中心}
+对称中心（记为$i$）是晶体内部一点，通过该点的反演操作（任一点沿连线过中心到另一侧等距处）后晶体复原。
 
 \subsection{晶体和点阵}
+晶体的规则结构可抽象为\textbf{点阵}，点阵由一系列等同位置（阵点）组成，阵点代表晶体中原子、分子等的等同排列位置。
+
 \subsection{晶系和点阵型式}
 \subsubsection{七个晶系}
+按晶格参数（晶胞边长 $a$、$b$、$c$ 和夹角 $\alpha$、$\beta$、$\gamma$）分为七类：
+
+\begin{table}[h!]
+  \centering
+  \caption*{晶系与晶格参数关系}
+  \begin{tabular}{lc}
+    \toprule
+    \textbf{晶系} & \textbf{晶格参数关系} \\
+    \midrule
+    三斜 & $a \neq b \neq c$，$\alpha \neq \beta \neq \gamma \neq \ang{90}$ \\
+    单斜 & $a \neq b \neq c$，$\alpha = \gamma = \ang{90} \neq \beta$ \\
+    正交 & $a \neq b \neq c$，$\alpha = \beta = \gamma = \ang{90}$ \\
+    四方 & $a = b \neq c$，$\alpha = \beta = \gamma = \ang{90}$ \\
+    立方 & $a = b = c$，$\alpha = \beta = \gamma = \ang{90}$ \\
+    三方 & $a = b = c$，$\alpha = \beta = \gamma \neq \ang{90}$ \\
+    六方 & $a = b \neq c$，$\alpha = \beta = \ang{90}$，$\gamma = \ang{120}$ \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
 \subsubsection{十四种空间点阵型式}
+七个晶系对应14种空间点阵（Bravais点阵）：
+\begin{itemize}
+    \item 三斜：
+        \begin{itemize}
+            \item 简单三斜
+        \end{itemize}
+    \item 单斜：
+        \begin{itemize}
+            \item 简单单斜
+            \item 底心单斜
+        \end{itemize}
+    \item 正交：
+        \begin{itemize}
+            \item 简单正交
+            \item 体心正交
+            \item 底心正交
+            \item 面心正交
+        \end{itemize}
+    \item 四方：
+        \begin{itemize}
+            \item 简单四方
+            \item 体心四方
+        \end{itemize}
+    \item 立方：
+        \begin{itemize}
+            \item 简单立方
+            \item 体心立方
+            \item 面心立方
+        \end{itemize}
+    \item 三方：
+        \begin{itemize}
+            \item 简单三方
+        \end{itemize}
+    \item 六方：
+        \begin{itemize}
+            \item 简单六方
+        \end{itemize}
+\end{itemize}
 
 \subsection{晶胞}
+\textbf{晶胞}是点阵的基本重复单元，能反映点阵的全部特征。
+
+晶胞参数：即晶格参数 $a$、$b$、$c$（边长）和 $\alpha$、$\beta$、$\gamma$（夹角）。
+
+晶胞类型：
+\begin{description}
+    \item[素晶胞] 只含1个阵点的晶胞；
+    \item[复晶胞] 含2个及以上阵点的晶胞（如体心、面心晶胞）。
+\end{description}
+
+选取原则：反映点阵对称性、体积最小、棱边夹角接近 \ang{90}。

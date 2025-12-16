@@ -1,0 +1,133 @@
+\chapter{沉淀溶解反应原理}
+
+\section{溶度积与溶解度}
+
+\subsection{溶解度的定义}
+
+以\SI{100}{\g}溶剂中溶解的溶质的物质的量表示溶解度，符号为 $S$，单位为\si{\mol\per\g}。
+
+\subsection{溶度积常数}
+\subsubsection{溶度积的定义表达式}
+对于难溶强电解质$\ce{A_{x}B_{y}}$：
+\[
+\ce{A_{x}B_{y}(s) <=> xA^{y+}(aq) + yB^{x-}(aq)}
+\]
+溶度积常数：
+\[
+K_{\text{sp}}^{\ominus} = \left[ c_{\text{r}}(\ce{A^{y+}}) \right]^x \cdot \left[ c_{\text{r}}(\ce{B^{x-}}) \right]^y
+\]
+
+\subsubsection{溶度积的基本特性}
+\begin{itemize}
+    \item 仅与温度有关，与浓度无关
+    \item 通过实验测定或理论计算得出
+    \item 反映难溶电解质溶解度的相对大小
+\end{itemize}
+
+\subsection{溶度积与溶解度的换算关系}
+
+\begin{table}[ht]
+\centering
+\caption*{不同类型电解质的溶度积与溶解度关系}
+\begin{tabular}{lcc}
+\toprule
+电解质类型 & 关系式 & 溶解度公式 \\
+\midrule
+AB型 & $K_{\text{sp}}^{\ominus} = S^2$ & $\displaystyle S = \sqrt{K_{\text{sp}}^{\ominus}}$ \\
+$\ce{A2B}$/$\ce{AB2}$型 & $K_{\text{sp}}^{\ominus} = 4S^3$ & $\displaystyle S = \sqrt[3]{\frac{K_{\text{sp}}^{\ominus}}{4}}$ \\
+$\ce{A3B}$/$\ce{AB3}$型 & $K_{\text{sp}}^{\ominus} = 27S^4$ & $\displaystyle S = \sqrt[4]{\frac{K_{\text{sp}}^{\ominus}}{27}}$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{换算关系的适用条件}
+\begin{enumerate}
+    \item 难溶电解质一步完全解离
+    \item 离子不发生水解、聚合、配位等副反应
+    \item 仅相同类型电解质可直接比较$K_{\text{sp}}^{\ominus}$
+\end{enumerate}
+
+\subsubsection{影响换算准确性的因素}
+\begin{enumerate}
+    \item 分子溶解度的影响
+    \item 离子对的影响  
+    \item 分步解离的影响
+    \item 水解的影响
+\end{enumerate}
+
+\section{多相解离平衡}
+
+\subsection{同离子效应}
+
+向难溶强电解质溶液中加入含相同离子的易溶电解质，使难溶电解质溶解度降低。
+
+以$\ce{BaSO4}$为例：
+\[
+\ce{BaSO4(s) <=> Ba^{2+}(aq) + SO4^{2-}(aq)}
+\]
+加入 \(\ce{Na2SO4}\)，$c(\ce{SO4^{2-}})$增大，平衡左移，$S$降低。
+
+\subsection{盐效应}
+
+向难溶强电解质溶液中加入不含相同离子的易溶强电解质，使难溶电解质溶解度升高。
+
+\subsubsection{竞争效应的结论}
+沉淀剂不可无限过量，同离子效应通常占主导。
+
+\subsection{离子积与溶度积规则}
+
+\subsubsection{离子积的定义}
+对于$\ce{A_{x}B_{y}}$，任意条件下的离子积：
+\[
+Q = \left[ c_{\text{r}}(\ce{A^{y+}}) \right]^x \cdot \left[ c_{\text{r}}(\ce{B^{x-}}) \right]^y
+\]
+
+\subsubsection{溶度积规则的三条判断}
+\begin{enumerate}
+    \item $Q < K_{\text{sp}}^{\ominus}$：沉淀溶解
+    \item $Q = K_{\text{sp}}^{\ominus}$：平衡状态  
+    \item $Q > K_{\text{sp}}^{\ominus}$：生成沉淀
+\end{enumerate}
+
+\subsection{分步沉淀原理}
+
+向混合离子溶液中滴加沉淀剂时，所需沉淀剂浓度最低的离子先沉淀。
+
+\subsection{沉淀溶解的途径}
+
+\begin{enumerate}
+    \item 生成气体或弱电解质
+    \item 生成配离子或发生氧化还原反应
+    \item 转化为更难溶的物质
+\end{enumerate}
+
+\subsection{沉淀转化原理}
+
+一种沉淀转化为另一种$K_{\text{sp}}^{\ominus}$更小的沉淀：
+\[
+\ce{AgCl(s) + I^-(aq) <=> AgI(s) + Cl^-(aq)}
+\]
+因$K_{\text{sp}}^{\ominus}(\ce{AgI}) < K_{\text{sp}}^{\ominus}(\ce{AgCl})$，反应自发进行。
+
+\subsection{金属硫化物的溶解}
+
+\subsubsection{金属硫化物的溶解分类}
+\begin{itemize}
+    \item \textbf{易溶于酸：} $\ce{MnS}$、$\ce{FeS}$、$\ce{CoS}$、$\ce{NiS}$、$\ce{ZnS}$
+    \item \textbf{难溶于酸：} $\ce{CuS}$、$\ce{CdS}$、$\ce{PbS}$、$\ce{SnS}$、$\ce{HgS}$
+\end{itemize}
+
+\subsubsection{金属硫化物溶解的定量计算}
+溶解平衡：
+\[
+\ce{MS(s) + 2H+(aq) <=> M^{2+}(aq) + H2S(aq)}
+\]
+
+平衡常数：
+\[
+K^{\ominus} = \frac{K_{\text{sp}}^{\ominus}(\ce{MS})}{K_{a1}^{\ominus} \cdot K_{a2}^{\ominus}}
+\]
+所需$\ce{H+}$浓度：
+\[
+c_{\text{r}}(\ce{H+}) = \sqrt{\frac{c_{\text{r}}(\ce{M^{2+}}) \cdot c_{\text{r}}(\ce{H2S}) \cdot K_{a1}^{\ominus} \cdot K_{a2}^{\ominus}}{K_{\text{sp}}^{\ominus}(\ce{MS})}}
+\]

@@ -1,0 +1,518 @@
+\chapter{氧化还原反应原理及电化学} 
+
+\section{原电池与氧化还原反应} 
+
+\subsection{氧化数} 
+\textbf{定义} ：IUPAC定义为化学式中原子具有的\textbf{形式} 电荷数。
+
+\textbf{氧化数的确定规则} ：
+\begin{enumerate} 
+    \item 单质中元素的氧化数等于零（如  \ce{H2} ）
+    \item 离子型化合物中，某元素原子的氧化数等于该元素的离子电荷数（如  \ce{NaCl}  中  \ce{Na+}  为 \(+ 1\)， \ce{Cl-}  为 \(-1\)）
+    \item 共价化合物中，某元素原子的氧化数等于该原子的形式电荷数（如  \ce{CO2}  中  \ce{C}  为 \(+ 4\)， \ce{O}  为 \(- 2\)）
+    \item 化合物中所有元素氧化数的代数和等于零；离子中所有元素氧化数的代数和等于该离子的电荷数
+    \item 氢原子的氧化数一般为 \( + 1\)，但在活泼金属氢化物（如 \ce{NaH} ）中为\(- 1\)；氧原子的氧化数一般为\(- 2\)，但在过氧化物（如 \ce{H2O2} ）中为 \(- 1\)，在超氧化物（如 \ce{KO2} ）中为 \(- 1/2\)
+\end{enumerate} 
+
+\textbf{注} ：氧化数与真实结构无关，仅为形式电荷数。例如  \ce{Fe3O4}  真实结构为 \ce{Fe^{3+} Fe^{2+} [Fe^{3+} O4]^{5-} } ，但其氧化数为 \(+ 8/3\)。与真实结构有关的是化合价。
+
+\subsection{氧化还原反应} 
+\textbf{定义} ：凡物质在化学反应过程中氧化数有变化的反应。
+
+\subsubsection{基本概念} 
+\begin{itemize} 
+    \item 氧化（Oxidization）：还原剂（Reductant）氧化数升高生成还原产物的过程
+    \item 还原（Reduction）：氧化剂（Oxidant）氧化数降低生成还原产物的过程
+    \item 自身氧化还原反应（self-redox reaction）：氧化数的升高和降低发生在同一个化合物中不同元素的反应（如 \ce{2KClO3 = 2KCl + 3O2} ）
+    \item 歧化反应（disproportionate reaction）：氧化数的升高和降低发生在同一个化合物中的同一元素中的反应
+    \item 氧化还原电对（redox couple）：同一元素反应前后的两种氧化还原状态，氧化数高的为氧化型物质（Ox），氧化数低的为还原型物质（Re），二者构成电对（如 \ce{Zn + Cu^{2+}  = Zn^{2+}  + Cu} 中含 \ce{Zn^{2+} /Zn} 和 \ce{Cu^{2+} /Cu} 两个电对）
+\end{itemize} 
+
+\subsubsection{氧化还原反应方程式的配平} 
+\textbf{原则} ：氧化剂氧化数降低总和 = 还原剂氧化数升高总和。
+
+\textbf{步骤} ：
+\begin{enumerate} 
+    \item 根据实验现象确定生成物（注意反应条件）
+    \item 确定元素氧化数的变化
+    \item 根据电子得失数目相等配平（需满足电子守恒、原子守恒、电荷守恒）
+\end{enumerate} 
+
+\subsection{原电池的构造} 
+\textbf{定义} ：利用氧化还原反应中电子的定向移动，将化学能直接转化为电能的装置（以铜锌原电池为例，反应为 \ce{Zn + Cu^{2+}  = Zn^{2+}  + Cu} ）。
+
+\textbf{构成条件} ：
+\begin{enumerate} 
+    \item 存在自发的氧化还原反应
+    \item 氧化反应和还原反应分别在两极进行
+    \item 内外电路构成通路
+\end{enumerate} 
+
+\textbf{核心组件} ：
+\begin{itemize} 
+    \item 电极： \ce{Zn} 为阳极（氧化，电子流出，负极），反应为 \ce{Zn - 2e- = Zn^{2+} } ； \ce{Cu} 为阴极（还原，电子流入，正极），反应为 \ce{Cu^{2+}  + 2e- = Cu} 
+    \item 盐桥作用：构成电路；中和过剩电荷，保持溶液电中性
+\end{itemize} 
+
+\subsection{电极、电池反应及电池符号} 
+
+\subsubsection{电极与电极反应} 
+\begin{itemize} 
+    \item 电极：电子流入/流出的导体与电解质溶液组成的体系
+    \item 负极（阳极）：电子流出，发生氧化反应（如 \ce{Zn | Zn^{2+} } ，反应 \ce{Zn - 2e- = Zn^{2+} } ）
+    \item 正极（阴极）：电子流入，发生还原反应（如 \ce{Cu | Cu^{2+} } ，反应 \ce{Cu^{2+}  + 2e- = Cu v}
+\end{itemize} 
+
+\subsubsection{电池符号书写规则} 
+\begin{itemize} 
+    \item 顺序：负极（低电势）\ $\xrightarrow{\text{盐桥} } $\ 正极（高电势）
+    \item 符号含义：“|”表示相界面，“||”表示盐桥，同一溶液中不同氧化态离子用“,”分隔并注明浓度
+    \item 惰性电极：当无金属导体时，需加入 \ce{Pt} 或 \ce{C} （如 \ce{Cr^{2+}  + Fe^{3+}  = Fe^{2+}  + Cr^{3+} } 的电池符号为： \ce{(-) (Pt) | Cr^{2+} (m_1), Cr^{3+} (m_2) || Fe^{3+} (m_3), Fe^{2+} (m_4) | (C) (+)} ）
+    \item 气体电极：如标准氢电极（ \ce{(Pt) H2(\qty{100}{\kilo\pascal} ) | H+(m_r=1)} ），需用 \ce{Pt} （铂黑）吸附气体
+\end{itemize} 
+
+\subsubsection{电池符号示例} 
+反应 \ce{(NH4)2S2O8 + 3KI = (NH4)2SO4 + K2SO4 + KI3} 的电池符号：
+
+氧化态变化： \ce{S2O8^{2-}  -> SO4^{2-} } （ \ce{S}  为 \(+ 7\)， \ce{S}  为 \(+ 6\)）（还原）； \ce{I- -> I3^-} （ \ce{I-}  为 \(- 1\)， \ce{I3^-}  为 \(- 1/3\)）（氧化）
+
+电池符号： \ce{(-) (Pt) | I-(m_1), I3^-(m_2) || S2O8^{2-} (m_3), SO4^{2-} (m_4) | (Pt) (+)} 
+
+\subsection{Faraday定律、电动势与 $G$ 函数} 
+
+\subsubsection{Faraday定律} 
+\textbf{核心关系} ：电荷与物质质量的关系为 $ Q = \frac{m}{M}  \cdot nF $ ，其中 $ F $ 为Faraday 常数（ $ F = \num{1.6021773e-19} ~\si{\coulomb}  \times \num{6.022137e23} ~\si{\per\mol}  = \qty{96485.31}{\coulomb\per\mol}  $ ）。
+
+\textbf{定律内容} ：
+\begin{enumerate} 
+    \item 两极产生/消耗物质的质量与通过电池的电荷量成正比
+    \item 固定电荷量时，产生/消耗物质的质量与（摩尔质量/电子转移数）成正比
+\end{enumerate} 
+
+\subsubsection{原电池电动势与 $G$ 函数} 
+\begin{itemize} 
+    \item 关系：\(\Delta_r G_m = -n F E\)（ $ \Delta_r G_m $ 为吉布斯自由能变， $ E $ 为电池电动势）
+    \item 反应方向判断： $ E > 0 $ 时， $ \Delta_r G_m < 0 $ ，反应自发； $ E < 0 $ 时，反应非自发
+\end{itemize} 
+
+\section{电极电势、能斯特方程及其应用} 
+
+\subsection{电极电势的产生——双电层理论} 
+\textbf{核心原理} ：电极与溶液接触时，金属表面的原子发生溶解（生成金属离子进入溶液）和沉积（溶液中金属离子得到电子附着于电极表面），最终达到平衡，在电极与溶液界面形成双电层，产生电势差，即电极电势。
+
+% \textbf{平衡过程} ： \ce{M + m H2O <=>[溶解][沉积] M^{n+}  \cdot m H2O + ne-} 
+% TODO
+
+不同电极体系的双电层结构不同，故电极电势不同。
+
+\subsection{标准电极电势的测定} 
+\textbf{测量思路} ：电极电势绝对值无法测定，需以\textbf{标准氢电极} 为参考（规定其电势为0），通过比较确定其他电极的电势。
+
+\subsubsection{标准氢电极（SHE）} 
+\begin{itemize} 
+    \item 组成：\( \ce{(Pt) H2(p^\ominus) | H+(m_r=1)} （p^\ominus = \qty{100}{\kilo\pascal}  \)，\( m_r \)为相对质量摩尔浓度）
+    \item 规定：\( \varphi_{ \ce{H+ / H2} } ^\ominus = \qty{0}{\volt}  \)（\qty{298.15}{\kelvin} ）
+\end{itemize} 
+
+\subsubsection{标准电极电势} 
+\textbf{定义} ：当电极处于标准态（\( p = p^\ominus \)，\( m = \qty{1}{\mol\per\kilo\gram}  \)，\qty{298.15}{\kelvin} ）时，与标准氢电极组成原电池的电势差叫做标准电极电势（\(\varphi_{ \ce{Ox/Re} } ^\ominus\)）。
+
+\textbf{测定示例} ：
+\begin{itemize} 
+    \item  \ce{Zn^{2+} /Zn} ：原电池为 \( \ce{(-) (Pt) H2(p^\ominus) | H+(m_r=1) || Zn^{2+} (m_r=1) | Zn (+)} \)，测得 \( E = -0.7618\ \mathrm{V}  \)，故 \( \varphi_{ \ce{Zn^{2+} /Zn} } ^\ominus = -0.7618\ \mathrm{V}  \)
+    \item  \ce{Cu^{2+} /Cu} ：原电池为 \( \ce{(-) (Pt) H2(p^\ominus) | H+(m_r=1) || Cu^{2+} (m_r=1) | Cu (+)} \)，测得 \( E = 0.347\ \mathrm{V}  \)，故 \( \varphi_{ \ce{Cu^{2+} /Cu} } ^\ominus = 0.347\ \mathrm{V}  \)
+\end{itemize} 
+
+\subsubsection{电势表核心规律} 
+\begin{itemize} 
+    \item \( \varphi^\ominus \)越低，电对中还原态物质还原性越强（失电子能力越强），氧化态物质氧化性越弱
+    \item \( \varphi^\ominus \)越高，电对中氧化态物质氧化性越强（得电子能力越强），还原态物质还原性越弱
+    \item 还原性最强的物质为 \ce{K} ，氧化性最强的物质为 \ce{F2} 
+    \item \( \varphi^\ominus \)高的电对的氧化态可自发与\( \varphi^\ominus \)低的电对的还原态反应（对角线规则）
+    \item 同一物质在不同介质中\( \varphi^\ominus \)不同（如 \ce{KMnO4} ：酸性中\( \varphi_{ \ce{MnO4^- / Mn^{2+} } } ^\ominus = \qty{1.507}{\volt}  \)，中性中\( \varphi_{ \ce{MnO4^- / MnO2} } ^\ominus = \qty{0.595}{\volt}  \)）
+    \item 电对平衡方程式的计量数不影响\( \varphi^\ominus \)数值，且\( \varphi^\ominus \)无加和性
+\end{itemize} 
+
+\subsection{能斯特方程——浓度对电极电势的影响} 
+
+\subsubsection{能斯特方程推导} 
+\textbf{电极反应通式} ：\(\text{a}  (\text{氧化态} ) + n\text{e-}  = \text{b}  (\text{还原态} )\)
+
+\textbf{任意温度\( T \)下} ：
+\[
+\varphi_T = \varphi_T^\ominus + \frac{RT}{nF} \ln\frac{m_r^a(\text{氧化态} )}{m_r^b(\text{还原态} )} 
+\]
+
+\textbf{\qty{298.15}{\kelvin} 时} （代入\( R = \qty{8.314}{\joule\per\mol\per\kelvin}  \)，\( F = \qty{96485}{\coulomb\per\mol}  \)，\( \ln x = 2.3026\lg x \)）：
+\[
+\varphi_{298}  = \varphi_{298} ^\ominus + \frac{0.059}{n} \lg\frac{m_r^a(\text{氧化态} )}{m_r^b(\text{还原态} )} 
+\]
+
+\subsubsection{应用注意事项} 
+\begin{itemize} 
+    \item 氧化态/还原态前的计量数需作为浓度的指数
+    \item \( n \)为电极反应中电子转移数（需与配平式一致）
+    \item 气体用相对分压（\( p/p^\ominus \)）代入，纯固体、纯液体（如 \ce{H2O} ）不代入
+    \item 若反应中有 \ce{H+} 或 \ce{OH-} ，需代入其实际浓度
+\end{itemize} 
+
+\subsubsection{计算示例} 
+\textbf{例1} ：计算\qty{298}{\kelvin} 时 \ce{Cu | Cu^{2+} (m_r=0.1)} 的电极电势（已知\( \varphi_{ \ce{Cu^{2+} /Cu} } ^\ominus = \qty{0.347}{\volt}  \)）
+
+电极反应 \ce{Cu^{2+}  + 2e- = Cu} ，\( n=2 \)，代入公式：
+\[
+\varphi = 0.347 + \frac{0.059}{2} \lg 0.1 = 0.347 - 0.0295 = \qty{0.3175}{\volt} 
+\]
+
+\textbf{例2} ：计算 \ce{Fe3O4 + 8H+ + 2e- = 3Fe^{2+}  + 4H2O} 在 \ce{pH=7} 时的电势（已知\( \varphi^\ominus = \qty{1.23}{\volt}  \)， \ce{Fe^{2+} } 浓度为标准态）
+
+\( n=2 \)，\(  \ce{[H+]}  = \qty{1e-7}{\mol\per\kilo\gram}  \)，代入公式：
+\[
+\varphi = 1.23 + \frac{0.059}{2} \lg (10^{-7} )^8 = 1.23 - 1.652 = \qty{-0.422}{\volt} 
+\]
+
+\subsubsection{浓度/介质对电势的影响} 
+\begin{itemize} 
+    \item 离子浓度升高（氧化态）导致电势升高；还原态浓度升高导致电势降低
+    \item  \ce{pH} 影响：含 \ce{H+} / \ce{OH-} 的电极反应（如金属氧化物、含氧酸盐）， \ce{pH} 变化对电势影响显著，甚至改变反应产物（如 \ce{MnO4^-} ：酸性条件下生成 \ce{Mn^{2+} } ，中性条件下生成 \ce{MnO2} ，碱性条件下生成 \ce{MnO4^{2-} } ）
+\end{itemize} 
+
+\subsection{电极电势的应用} 
+
+\subsubsection{判断原电池正负极及计算电动势} 
+\textbf{规则} ：电势低的为负极，电势高的为正极；电动势\( E = \varphi_{(+)}  - \varphi_{(-)}  \)
+
+\textbf{示例} ：由 \ce{Ag | Ag+(m_r=0.01)} 和 \ce{Pb | Pb^{2+} (m_r=1.0)} 组成原电池（已知\( \varphi_{ \ce{Ag+/Ag} } ^\ominus = \qty{0.7991}{\volt}  \)，\( \varphi_{ \ce{Pb^{2+} /Pb} } ^\ominus = \qty{-0.126}{\volt}  \)）
+
+ \ce{Ag+/Ag} 电势：\( \varphi = 0.7991 + 0.059\lg 0.01 = \qty{0.6811}{\volt}  \)
+
+ \ce{Pb^{2+} /Pb} 电势：\( \varphi = \qty{-0.126}{\volt}  \)（标准态）
+
+正极： \ce{Ag+/Ag} ，负极： \ce{Pb^{2+} /Pb} ，电动势\( E = 0.6811 - (-0.126) = \qty{0.8071}{\volt}  \)
+
+\subsubsection{判断氧化剂/还原剂相对强弱} 
+\textbf{示例} ：\( \varphi_{ \ce{Zn^{2+} /Zn} } ^\ominus = \qty{-0.7618}{\volt}  \)，\( \varphi_{ \ce{Cu^{2+} /Cu} } ^\ominus = \qty{0.347}{\volt}  \)，因此 \ce{Zn} 还原性强于 \ce{Cu} ， \ce{Cu^{2+} } 氧化性强于 \ce{Zn^{2+} } 
+
+\textbf{规律} ：\( \varphi^\ominus \)顺序为 \ce{MnO4^- / Mn^{2+} } (\qty{1.507}{\volt} ) >  \ce{Fe^{3+} /Fe^{2+} } (\qty{0.771}{\volt} ) >  \ce{Cu^{2+} /Cu} (\qty{0.347}{\volt} )，因此 \ce{Fe^{3+} } 氧化性强于 \ce{Cu^{2+} } ，弱于 \ce{MnO4^-} 
+
+\subsubsection{选择合适的氧化剂/还原剂} 
+\textbf{示例} ：混合溶液含 \ce{Br-} 和 \ce{I-} ，需氧化 \ce{I-} 为 \ce{I2} 但不氧化 \ce{Br-} （已知\( \varphi_{ \ce{Br2/Br-} } ^\ominus = \qty{1.066}{\volt}  \)，\( \varphi_{ \ce{I2/I-} } ^\ominus = \qty{0.535}{\volt}  \)，\( \varphi_{ \ce{Fe^{3+} /Fe^{2+} } } ^\ominus = \qty{0.771}{\volt}  \)，\( \varphi_{ \ce{MnO4^- / Mn^{2+} } } ^\ominus = \qty{1.507}{\volt}  \)）
+
+需满足\( \varphi_{ \ce{I2/I-} } ^\ominus < \varphi_{\text{氧化剂} } ^\ominus < \varphi_{ \ce{Br2/Br-} } ^\ominus \)，因此选择 \ce{Fe2(SO4)3} 
+
+\subsubsection{判断氧化还原反应方向} 
+\textbf{规则} ：\( E > 0 \)（\( \Delta_r G_m < 0 \)）时反应自发；\( E < 0 \)时反应非自发
+
+\textbf{示例} ：判断 \ce{2FeCl3 + Cu = 2FeCl2 + CuCl2} 是否自发（\( \varphi_{ \ce{Fe^{3+} /Fe^{2+} } } ^\ominus = \qty{0.771}{\volt}  \)，\( \varphi_{ \ce{Cu^{2+} /Cu} } ^\ominus = \qty{0.347}{\volt}  \)）
+
+\( E^\ominus = 0.771 - 0.347 = \qty{0.424}{\volt}  > 0 \)，因此反应自发（应用：制造印刷电路板）
+
+\subsubsection{判断反应进行程度} 
+\textbf{关系} ：\( \Delta_r G_m^\ominus = -RT\ln K^\ominus = -nFE^\ominus \)，在\qty{298.15}{\kelvin} 时：
+\[
+\lg K^\ominus = \frac{nE^\ominus}{0.059} 
+\]
+
+\textbf{示例1} ：计算 \ce{2FeCl3 + Cu = 2FeCl2 + CuCl2} 的\( K^\ominus \)（\( n=2 \)，\( E^\ominus = \qty{0.424}{\volt}  \)）
+\[
+\lg K^\ominus = \frac{2 \times 0.424}{0.059}  \approx 14.55\quad\text{因此} \quad K^\ominus \approx 3.5 \times 10^{14} 
+\]
+（反应彻底）
+
+\textbf{示例2} ：计算 \ce{2Fe^{2+}  + Cu^{2+}  = 2Fe^{3+}  + Cu} 的\( K^\ominus \)（\( E^\ominus = 0.347 - 0.771 = \qty{-0.424}{\volt}  \)）
+\[
+\lg K^\ominus = \frac{2 \times (-0.424)}{0.059}  \approx -14.55\quad\text{因此} \quad K^\ominus \approx 2.8 \times 10^{-15} 
+\]
+（逆向趋势大）
+
+\subsection{电势图解及应用} 
+
+\subsubsection{元素电势图} 
+\textbf{定义} ：将某元素的不同氧化态按从高到低顺序排列，标注各电对\( \varphi^\ominus \)的图（分酸性\( \varphi_a^\ominus \)和碱性\( \varphi_b^\ominus \)）。
+
+\textbf{书写规则} ：
+\begin{itemize} 
+    \item 氧化态：高到低（左到右）
+    \item 直线连接相邻氧化态，标注对应电对的\( \varphi^\ominus \)
+\end{itemize} 
+
+\textbf{应用} ：
+\begin{enumerate} 
+    \item \textbf{判断歧化反应} ：若中间氧化态的\( \varphi_{\text{右} } ^\ominus > \varphi_{\text{左} } ^\ominus \)，则中间物质发生歧化（如 \ce{HClO2} ：\( \varphi_{ \ce{ClO3^- / HClO2} } ^\ominus = \qty{1.21}{\volt}  \)，\( \varphi_{ \ce{HClO2 / HClO} } ^\ominus = \qty{1.64}{\volt}  \)，由于\( \varphi_{\text{右} }  > \varphi_{\text{左} }  \)，歧化为 \ce{ClO3^-} 和 \ce{HClO} ）
+    
+    \item \textbf{计算任意电对的\( \varphi^\ominus \)} ：若 \ce{A + n1e- = B} （\( \varphi_1^\ominus \)）， \ce{B + n2e- = C} （\( \varphi_2^\ominus \)），则 \ce{A + (n1+n2)e- = C} （\( \varphi^\ominus \)）：
+    \[
+    \varphi^\ominus = \frac{n1\varphi_1^\ominus + n2\varphi_2^\ominus}{n1 + n2} 
+    \]
+    
+    \item \textbf{示例} ：已知 \ce{BrO3^- ->[\qty{1.0774}{\volt} ] Br2 ->[\qty{0.4556}{\volt} ] Br-} ，计算 \ce{BrO3^- / Br-} 的\( \varphi^\ominus \)（\( n1=5 \)，\( n2=1 \)）：
+    \[
+    \varphi^\ominus = \frac{5 \times 1.0774 + 1 \times 0.4556}{5 + 1}  \approx \qty{0.987}{\volt} 
+    \]
+\end{enumerate} 
+
+\subsubsection{pH-电势图} 
+\textbf{定义} ：以\( \varphi \)为纵坐标、 \ce{pH} 为横坐标，描述电极电势与溶液 \ce{pH} 关系的图（物种均为标准态）。
+
+\textbf{类型（按电极反应分类）} ：
+\begin{enumerate} 
+    \item 有 \ce{H+} / \ce{OH-} 参与、有电子得失（如 \ce{2H+ + 2e- = H2} ）导致\( \varphi \)随 \ce{pH} 变化（斜率为-0.059/n）
+    \item 无 \ce{H+} / \ce{OH-} 参与、有电子得失（如 \ce{Fe^{2+}  + 2e- = Fe} ）导致\( \varphi \)与 \ce{pH} 无关（水平线）
+    \item 有 \ce{H+} / \ce{OH-} 参与、无电子得失（如 \ce{Fe^{3+}  + 3H2O = Fe(OH)3 + 3H+} ）表示无电子转移，仅表示沉淀平衡（水平线，对应 \ce{pH=1.14 - 0.33\lg [Fe^{3+} ]} ）
+\end{enumerate} 
+
+\textbf{核心规律} ：
+\begin{itemize} 
+    \item 某电对的\( \varphi \)-\( \ce{pH} \)线上方：氧化态稳定区
+    \item 线下方：还原态稳定区
+    \item 两线交点两侧反应方向相反（如 \ce{H3AsO4 / H3AsO3} 与 \ce{I2/I-} 的交点： \ce{pH}  < 4时， \ce{H3AsO4} 氧化 \ce{I-} ； \ce{pH}  > 4时， \ce{I2} 氧化 \ce{H3AsO3} ）
+\end{itemize} 
+
+\textbf{典型体系应用} ：
+\begin{enumerate} 
+    \item \textbf{水体系pH-电势图} ：确定 \ce{H2O} 的稳定区（ \ce{O2/H2O} 线以上 \ce{O2} 稳定， \ce{H2O/H2} 线以下 \ce{H2} 稳定，两线之间 \ce{H2O} 稳定）
+    \item \textbf{ \ce{Fe-H2O} 体系pH-电势图} ：判断 \ce{Fe} 、 \ce{Fe^{2+} } 、 \ce{Fe^{3+} } 、 \ce{Fe(OH)3} 的稳定区域（如 \ce{pH}  > 6时， \ce{Fe^{2+} } 易生成 \ce{Fe(OH)2} ）
+\end{enumerate} 
+
+\subsubsection{标准吉布斯函数变-氧化数图（自由能-氧化数图）} 
+\textbf{定义} ：某 \ce{pH} 下，以元素氧化数为横坐标，以单质到某氧化态反应的\( \Delta_r G_m^\ominus \)为纵坐标的图。
+
+\textbf{坐标计算} ：如 \ce{Mn -> Mn^{2+}  + 2e-} ，\( \Delta_r G_m^\ominus = \qty{-228.1}{\kilo\joule\per\mol}  \)得到坐标为（2，-228.1）
+
+\textbf{应用} ：
+\begin{enumerate} 
+    \item \textbf{判断歧化反应} ：某氧化态对应的点为凸点（高于相邻两氧化态连线）表示热力学不稳定，发生歧化；凹点表示稳定
+    \item \textbf{分析周期性规律} ：斜率越大，电对氧化性越强（如 \ce{VA} 族元素图中， \ce{BiO3^-} 斜率大，氧化性强于 \ce{HNO3} ）
+\end{enumerate} 
+
+\section{电解} 
+
+\subsection{电解池的组成和电极反应} 
+\begin{itemize} 
+    \item \textbf{电解池与原电池的区别} ：
+    \begin{table} [h]
+        \centering
+        \begin{tabular}{p{0.3\textwidth} p{0.3\textwidth} p{0.3\textwidth} } 
+            \hline
+            对比项 & 原电池 & 电解池 \\
+            \hline
+            能量转化 & 化学能到电能 & 电能到化学能 \\
+            反应自发性 & 自发氧化还原反应 & 非自发氧化还原反应 \\
+            电极命名 & 负极（阳极，氧化）、正极（阴极，还原） & 阴极（得电子，还原）、阳极（失电子，氧化） \\
+            电子流向 & 负极到正极（外电路） & 阳极到阴极（外电路，电源驱动） \\
+            \hline
+        \end{tabular} 
+    \end{table} 
+    
+    \item \textbf{核心概念} ：
+    \begin{itemize} 
+        \item 放电：离子在电极上得到（阴极）或失去（阳极）电子的过程
+        \item 电解液：熔融盐或电解质溶液
+        \item 惰性电极：不参与反应的电极（如 \ce{Pt} 、石墨），活性电极：参与反应的电极（如 \ce{Ni} 、 \ce{Cu} ）
+    \end{itemize} 
+    
+    \item \textbf{电解池核心问题} ：
+    \begin{enumerate} 
+        \item 何种离子先放电？
+        \item 所需实际分解电压是多少？
+    \end{enumerate} 
+\end{itemize} 
+
+\subsection{影响电极反应的主要因素} 
+\subsubsection{电极电势（理论因素）} 
+\begin{itemize} 
+    \item \textbf{阴极放电顺序} ：阳离子得电子， $ \varphi^\ominus $ 越高，越先放电（如 \ce{Cu^{2+} }  >  \ce{H+}  >  \ce{Zn^{2+} } ）
+    \item \textbf{阳极放电顺序} ：阴离子失电子， $ \varphi^\ominus $ 越低（还原态还原性越强），越先放电（如 \ce{Cl-}  >  \ce{OH-}  >  \ce{SO4^{2-} } ）
+\end{itemize} 
+
+\subsubsection{电极的极化} 
+\begin{itemize} 
+    \item \textbf{定义} ：实际电解中，电极电势偏离理论电势的现象（实际 $ \varphi \neq $ 理论 $ \varphi $ ），产生\textbf{超电势（ $ \eta $ ）} 
+    \item \textbf{极化类型} ：
+    \begin{enumerate} 
+        \item 浓差极化：电极表面离子浓度与溶液本体不同（如阴极 \ce{Cu^{2+} } 消耗快，表面浓度低， $ \varphi $ 降低），可通过搅拌减少
+        \item 电化学极化：电极反应速率迟缓（如 \ce{O2} 在阳极析出时反应慢，需更高电势），又称“活化极化”
+        \item IR降：电流通过电解液产生的电压降（ $ V_{\text{IR} }  = IR $ ）
+    \end{enumerate} 
+    
+    \item \textbf{超电势规律} ：
+    \begin{itemize} 
+        \item 阳极：实际电势 $ \varphi_{\text{阳实} }  = \varphi_{\text{阳理} }  + \eta_{\text{阳} }  $ （ $ \eta_{\text{阳} }  > 0 $ ）
+        \item 阴极：实际电势 $ \varphi_{\text{阴实} }  = \varphi_{\text{阴理} }  - \eta_{\text{阴} }  $ （ $ \eta_{\text{阴} }  > 0 $ ）
+        \item 影响因素：电解产物（金属 $ \eta $ 小，气体 $ \eta $ 大）、电极材料、电流密度、温度、搅拌速度
+    \end{itemize} 
+    
+    \item \textbf{分解电压与超电压} ：
+    \begin{itemize} 
+        \item 理论分解电压（ $ V_{\text{理分} }  $ ）： $ V_{\text{理分} }  = \varphi_{\text{阳理} }  - \varphi_{\text{阴理} }  $ 
+        \item 实际分解电压（ $ V_{\text{实分} }  $ ）： $ V_{\text{实分} }  = \varphi_{\text{阳实} }  - \varphi_{\text{阴实} }  = V_{\text{理分} }  + (\eta_{\text{阳} }  + \eta_{\text{阴} }  + V_{\text{IR} } ) $ 
+        \item 示例：电解 \ce{CuCl2} 溶液（ $ \varphi_{ \ce{Cl2/Cl-} } ^\ominus = 1.358\ \text{V}  $ ， $ \eta_{ \ce{Cl2} }  = 0.251\ \text{V}  $ ； $ \varphi_{ \ce{Cu^{2+} /Cu} } ^\ominus = 0.347\ \text{V}  $ ， $ \eta_{ \ce{Cu} }  \approx 0 $ ）：  
+         $ V_{\text{理分} }  = 1.358 - 0.347 = 1.011\ \text{V}  $ ；  
+         $ V_{\text{实分} }  = (1.358 + 0.251) - 0.347 = 1.262\ \text{V}  $ 
+    \end{itemize} 
+\end{itemize} 
+
+\subsection{电解产物的一般规律} 
+\subsubsection{惰性电极电解熔融盐} 
+\begin{itemize} 
+    \item 阴极：金属离子放电（如电解熔融 \ce{NaCl} ，阴极 \ce{Na+ + e- = Na} ）
+    \item 阳极：阴离子放电（如阳极 \ce{2Cl- - 2e- = Cl2 ^} ）
+\end{itemize} 
+
+\subsubsection{惰性电极电解电解质溶液} 
+\begin{table} [h]
+    \centering
+    \begin{tabular}{p{0.15\textwidth} p{0.3\textwidth} p{0.3\textwidth} p{0.25\textwidth} } 
+        \hline
+        电解类型 & 阴极产物（阳离子放电） & 阳极产物（阴离子放电） & 示例 \\
+        \hline
+        金属卤化物/硫化物（如 \ce{CuCl2} ） &  $ \varphi^\ominus > \varphi_{ \ce{H+} /H2} ^\ominus $ 的金属离子（如 \ce{Cu^{2+} -> Cu} ） & 卤素/硫（如 \ce{Cl- -> Cl2} ） & 电解 \ce{CuCl2} ： \ce{Cu} （阴）、 \ce{Cl2} （阳） \\
+        含氧酸盐（如 \ce{Na2SO4} ） &  $ \varphi^\ominus < \varphi_{ \ce{H+} /H2} ^\ominus $ 的金属离子（如 \ce{Na+} 不放电， \ce{H+ -> H2} ） &  \ce{OH- -> O2} （酸根不放电） & 电解 \ce{Na2SO4} ： \ce{H2} （阴）、 \ce{O2} （阳）（实质电解水） \\
+        活泼金属卤化物（如 \ce{NaCl} ） &  \ce{H+ -> H2} （ \ce{Na+} 不放电） &  \ce{Cl- -> Cl2} （ \ce{OH-} 不放电） & 电解 \ce{NaCl} ： \ce{H2} （阴）、 \ce{Cl2} （阳）、 \ce{NaOH} （溶液） \\
+        \hline
+    \end{tabular} 
+\end{table} 
+
+\textbf{规律} ：
+\begin{itemize} 
+    \item 阴极：金属活动性顺序中 \ce{Al} 之前的金属离子不放电， \ce{H+} 放电得 \ce{H2} ； \ce{Al} 之后的金属离子放电得金属；
+    \item 阳极： \ce{Cl-} 、 \ce{Br-} 、 \ce{I-} 、 \ce{S^{2-} } 放电得对应单质；含氧酸根（如 \ce{SO4^{2-} } 、 \ce{NO3^-} ）不放电， \ce{OH-} 放电得 \ce{O2} 
+\end{itemize} 
+
+\subsubsection{活性电极电解（如 \ce{Ni} 电极电解 \ce{NiSO4} ）} 
+\begin{itemize} 
+    \item 阴极： \ce{Ni^{2+}  + 2e- = Ni} （金属离子放电）
+    \item 阳极：活性电极溶解（ \ce{Ni - 2e- = Ni^{2+} } ），而非阴离子放电（应用：电镀、电解精炼金属）
+\end{itemize} 
+
+\subsubsection{电解精炼（以高纯铜为例）} 
+\begin{itemize} 
+    \item 阳极：粗铜（含 \ce{Au} 、 \ce{Ag} 、 \ce{Zn} 、 \ce{Fe} ）： \ce{Cu - 2e- = Cu^{2+} } （ \ce{Zn} 、 \ce{Fe} 溶解为 \ce{Zn^{2+} } 、 \ce{Fe^{2+} } ， \ce{Au} 、 \ce{Ag} 沉淀为阳极泥）
+    \item 阴极：纯铜： \ce{Cu^{2+}  + 2e- = Cu} （ \ce{Zn^{2+} } 、 \ce{Fe^{2+} } 不放电）
+    \item 电解液： \ce{H2SO4 + CuSO4} 混合溶液
+\end{itemize} 
+
+\subsection{pH-电势图在电解中的应用} 
+\begin{itemize} 
+    \item 核心作用：确定电解的最佳 \ce{pH} 和电极电势范围，提高电流效率
+    \item 示例： \ce{Cu-H2O} 体系pH-电势图：
+    \begin{itemize} 
+        \item  \ce{Cu+} 无稳定区，易歧化（ \ce{2Cu+ = Cu^{2+}  + Cu} ）
+        \item 电解铜时，需控制 \ce{pH} 和阴极电势在 \ce{Cu^{2+} } 稳定区，避免生成 \ce{Cu(OH)2} 或 \ce{Cu2O} 
+    \end{itemize} 
+\end{itemize} 
+
+\subsection{电解的应用} 
+\begin{enumerate} 
+    \item \textbf{电镀} ：
+    \begin{itemize} 
+        \item 目的：提高耐腐蚀性（如钢铁镀锌）、装饰性（如镀铜、镍、铬）、特殊功能（如镀硬铬提高耐磨性）
+        \item 原理：待镀工件为阴极，镀层金属为阳极，含镀层金属离子的溶液为电解液
+    \end{itemize} 
+    
+    \item \textbf{电抛光} ：
+    \begin{itemize} 
+        \item 定义：阳极电解使金属表面平滑（微观凸出部分电流密度大，溶解快；凹处溶解慢）
+        \item 作用：提高光洁度、反光性、耐腐蚀性
+    \end{itemize} 
+    
+    \item \textbf{电解加工} ：利用阳极溶解，将工件加工成特定形状（如模具）
+    
+    \item \textbf{阳极氧化} ：
+    \begin{itemize} 
+        \item 示例：铝的阳极氧化（阳极： \ce{2Al + 3H2O - 6e- = Al2O3 + 6H+} ；阴极： \ce{2H+ + 2e- = H2 ^} ）
+        \item 作用：生成致密 \ce{Al2O3} 膜，提高耐腐蚀性
+    \end{itemize} 
+\end{enumerate} 
+
+\section{金属的腐蚀与防护} 
+
+\subsection{金属腐蚀的危害与分类} 
+\begin{itemize} 
+    \item \textbf{危害} ：全世界每年因腐蚀报废的金属约为年产量的20-40\%，经济损失占国民生产总值的3.5\%-4.2\%，远超自然灾害总和（还可能引发泄漏、爆炸等事故）
+    
+    \item \textbf{分类} ：
+    \begin{itemize} 
+        \item 按腐蚀机制：
+        \begin{enumerate} 
+            \item \textbf{化学腐蚀} ：金属与介质直接发生化学反应（无电流产生），如 \ce{Fe + CO2 = FeO + CO} 、 \ce{4Al + 3O2 = 2Al2O3} 
+            \item \textbf{电化学腐蚀} ：金属（合金或不纯金属）与电解质溶液接触，通过电极反应腐蚀（有电流产生，更常见、危害更严重）
+        \end{enumerate} 
+        \item 按腐蚀特点：全面腐蚀、局部腐蚀（点腐蚀、缝隙腐蚀、晶间腐蚀、应力腐蚀、磨损腐蚀）
+        \item 按介质：酸性腐蚀、碱性腐蚀
+    \end{itemize} 
+    
+    \item \textbf{化学腐蚀与电化学腐蚀的区别} ：
+    \begin{itemize} 
+        \item 电流：化学腐蚀无电流，电化学腐蚀有电流
+        \item 反应过程：电化学腐蚀可分为独立的阴极和阳极过程，化学腐蚀无
+    \end{itemize} 
+\end{itemize} 
+
+\subsection{电化学腐蚀} 
+\subsubsection{腐蚀电池的构成} 
+\begin{itemize} 
+    \item 阳极（负极）：较活泼金属失去电子被腐蚀（如 \ce{Fe - 2e- = Fe^{2+} } ）
+    \item 阴极（正极）：杂质或另一金属（ $ \varphi^\ominus $ 高），发生还原反应（如：
+    \begin{itemize} 
+        \item 酸性介质： \ce{2H+ + 2e- = H2 ^} （析氢腐蚀）
+        \item 中性/碱性介质： \ce{O2 + 2H2O + 4e- = 4OH-} （吸氧腐蚀）
+    \end{itemize} 
+    \item 电解液：大气中的 \ce{CO2} 、 \ce{SOx} 、 \ce{H2S} 等形成的酸性溶液（酸雨）
+    
+    \item \textbf{腐蚀类型} ：
+    \begin{itemize} 
+        \item 宏电池腐蚀：明显的电极分离（如 \ce{Cu-Fe} 接触， \ce{Fe} 为阳极）
+        \item 微电池腐蚀：金属内部杂质形成微小电池（如纯铁中的 \ce{Fe3C} ， \ce{Fe} 为阳极）
+    \end{itemize} 
+    
+    \item \textbf{腐蚀过程三环节} ：
+    \begin{enumerate} 
+        \item 阳极金属失电子被腐蚀
+        \item 电子通过金属基体转移到阴极
+        \item 阴极发生还原反应（ \ce{H+} 或 \ce{O2} 得电子）
+    \end{enumerate} 
+\end{itemize} 
+
+\subsubsection{腐蚀电池的极化与腐蚀速率} 
+\begin{itemize} 
+    \item \textbf{极化对腐蚀的影响} ：
+    \begin{itemize} 
+        \item 阴极极化：阴极实际电势 $ \varphi_{\text{阴实} }  < \varphi_{\text{阴理} }  $ ，腐蚀电池电动势 $ E = \varphi_{\text{阴实} }  - \varphi_{\text{阳实} }  $ 降低
+        \item 阳极极化：阳极实际电势 $ \varphi_{\text{阳实} }  > \varphi_{\text{阳理} }  $ ， $ E $ 进一步降低
+        \item 结论：极化使腐蚀电流 $ I_{\text{腐} }  $ 减小，腐蚀速率 $ v_{\text{腐} }  $ 降低（极化有利于缓蚀）
+    \end{itemize} 
+    
+    \item \textbf{腐蚀速率公式} ： $$ v_{\text{腐} }  = \frac{3600 I_{\text{腐} }  \cdot M}{n F S}  = \frac{3600 E_{\text{腐} }  \cdot M}{R n F S}  $$ $ M $ 为金属摩尔质量， $ S $ 为电极面积， $ R $ 为电阻， $ E_{\text{腐} }  $ 为腐蚀电池电动势）
+    
+    \item \textbf{影响腐蚀速率的因素} ：
+    \begin{itemize} 
+        \item 热力学因素： $ E_{\text{腐} }  $ （ $ E_{\text{腐} }  $ 越大， $ v_{\text{腐} }  $ 越大）
+        \item 动力学因素：极化程度、金属活泼性、杂质含量、晶粒大小、表面状态、介质（ \ce{pH} 、温度、浓度）
+    \end{itemize} 
+\end{itemize} 
+
+\subsection{金属防腐的主要方法} 
+\begin{enumerate} 
+    \item \textbf{表面处理} ：
+    \begin{itemize} 
+        \item 阳极氧化：如铝的阳极氧化，生成致密 \ce{Al2O3} 膜
+        \item 钝化：如铁在浓 \ce{HNO3} 中形成钝化膜
+    \end{itemize} 
+    
+    \item \textbf{改善金属本身性能} ：合金化（如 \ce{Fe} 中加入 \ce{Cr} 、 \ce{Ni} ，制成不锈钢）
+    
+    \item \textbf{添加防护层} ：
+    \begin{itemize} 
+        \item 镀层：镀锌（白铁皮）、镀锡（马口铁）、镀铜、镀铬
+        \item 非金属涂层：油漆、塑料、陶瓷
+    \end{itemize} 
+    
+    \item \textbf{电化学保护} ：
+    \begin{itemize} 
+        \item 阴极保护：外接直流电源，使金属为阴极（电子流入，避免失电子）
+        \item 牺牲阳极：在金属表面连接 $ \varphi^\ominus $ 更低的金属（如镁、锌），牺牲阳极保护阴极（如管道防腐中用镁阳极）
+    \end{itemize} 
+    
+    \item \textbf{添加缓蚀剂} ：在介质中加入缓蚀剂（如有机胺，与 \ce{H+} 反应生成 \ce{-NH3+} ，阻止 \ce{H+} 在阴极放电，减缓腐蚀）
+\end{enumerate} 

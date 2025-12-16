@@ -1,8 +1,37 @@
 \documentclass[a4paper]{ctexrep}
 
 \setcounter{tocdepth}{4}
+
+\setmainfont{Palatino Linotype}
+
+\usepackage{zhnumber}
+\setCJKmainfont{FZKai-Z03}[ItalicFont = FZFangSong-Z02, BoldFont = FZBeiWeiKaiShu-S19S]
+\punctstyle{kaiming}
+\usepackage{fontspec}
+\usepackage{xeCJKfntef}
+\xeCJKsetup{underdot/symbol={·}}
+\newcommand{\dotemph}[1]{\CJKunderdot{#1}}
+\catcode`\。=\active
+\def。{．}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{enumerate}
+\usepackage{float}
+\usepackage{gbt7714}
+\bibliographystyle{gbt7714-numerical}
+\usepackage[top = 35mm, bottom = 25mm, left = 28mm, right = 26mm]{geometry}
+\usepackage{graphicx}
+\usepackage[colorlinks]{hyperref}
 \usepackage{markdown}
-\usepackage{hyperref}
+\usepackage[version=4]{mhchem}
+\usepackage{multirow}
+\usepackage[per-mode=symbol, inter-unit-product=\cdot]{siunitx}
+\usepackage{subcaption}
+\usepackage{tabularx}
+%\usepackage{unicode-math}
 
 \begin{document}
 

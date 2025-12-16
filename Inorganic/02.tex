@@ -1,0 +1,295 @@
+\chapter{化学热力学基础}
+
+\section{热力学第一定律}
+
+\subsection{热力学的基本概念和常用术语}
+\subsubsection{体系、环境与宇宙}
+\begin{description}
+    \item[体系] 热力学研究的特定对象。
+    \item[环境] 体系以外与体系存在相互作用的其他部分。
+    \item[宇宙] 体系与环境的总和，即热力学中的``宇宙''。
+\end{description}
+
+\subsubsection{体系的分类}
+根据体系与环境间的物质和能量交换关系，可分为三类：
+\begin{enumerate}
+    \item \textbf{敞开体系}：既有物质交换，又有能量交换；
+    \item \textbf{封闭体系}：无物质交换，仅有能量交换；
+    \item \textbf{孤立体系}：既无物质交换，也无能量交换。
+\end{enumerate}
+
+\subsubsection{状态与状态函数}
+\begin{description}
+    \item[状态] 由一组物理量（如温度、压力、体积等）确定的体系存在形式。
+    \item[状态函数] 描述体系状态的物理量，其值仅取决于体系当前状态，与变化途径无关。常见状态函数：温度（$T$）、压力（$p$）、体积（$V$）、热力学能（$U$）、焓（$H$）等。
+    \item[始态与终态] 体系变化前的状态为始态，变化后的状态为终态。状态函数的改变量（如$\Delta T = T_{\text{终}} - T_{\text{始}}$）仅由始态和终态决定。
+\end{description}
+
+\subsubsection{广度性质与强度性质}
+\begin{description}
+    \item[广度性质（量度性质）] 具有加和性，其值与体系物质的量成正比，如体积（$V$）、质量（$m$）、热力学能（$U$）。
+    \item[强度性质] 无加和性，其值与体系物质的量无关，如温度（$T$）、压力（$p$）、密度（$\rho$）。
+\end{description}
+
+\subsubsection{过程与途径}
+\begin{description}
+    \item[过程] 体系从始态到终态的状态变化。常见过程包括：
+        \begin{itemize}
+            \item 恒温过程：$T_{\text{始}} = T_{\text{终}} = T_{\text{环境}} = \text{常数}$；
+            \item 恒压过程：$p_{\text{始}} = p_{\text{终}} = p_{\text{环境}} = \text{常数}$；
+            \item 恒容过程：$V = \text{常数}$；
+            \item 绝热过程：体系与环境无热量交换（$Q = 0$）。
+        \end{itemize}
+    \item[途径] 完成某一过程的具体步骤，同一过程可通过不同途径实现。
+\end{description}
+
+\subsubsection{体积功}
+热力学中，体系对抗外压改变体积所做的功称为体积功，推导式为：
+\[
+W_{\text{体}} = -p_{\text{外}} \Delta V
+\]
+式中：$p_{\text{外}}$为外压，$\Delta V=V_\text{终}-V_\text{始}$为体积变化，负号表示体系对环境做功时$W$为负值。
+
+\subsubsection{热力学能}
+- \textbf{定义}：体系内部所有微观粒子（分子、原子、电子等）的总能量，包括粒子的动能（平动、转动、振动）和粒子间的势能（吸引、排斥），用符号$U$表示。  
+- \textbf{性质}：状态函数、广度性质，其绝对值无法测定，仅能通过改变量 $\Delta U=U_\text{终}-U_\text{始}$ 描述。
+
+\subsection{热力学第一定律的内容}
+
+热力学第一定律是能量守恒定律在热力学中的体现：体系从始态到终态的热力学能改变量等于体系吸收的热量与环境对体系所做的功之和，表达式为：
+\[
+\Delta U = Q + W
+\]
+
+体系从环境吸热，$Q>0$；体系向环境放热，$Q<0$；环境对体系做功，$W>0$；体系对环境做功，$W<0$。
+
+
+\section{热化学}
+
+\subsection{化学反应的热效应}
+\subsubsection{定义}
+当化学反应的生成物温度恢复到反应物温度时，体系吸收或放出的热量称为化学反应的热效应，简称反应热。反应热与反应条件（恒容或恒压）有关。
+
+\subsubsection{恒容反应热}
+恒容条件下（$\Delta V=0$），体积功$W=0$，由热力学第一定律得：
+\[
+Q_V = \Delta_{\text{r}}U
+\]
+式中：$Q_V$为恒容反应热，$\Delta_{\text{r}}U=U_{\text{生}}-U_{\text{反}}$为反应的热力学能改变量。$Q_V>0$为吸热反应，$Q_V<0$为放热反应。
+
+\subsubsection{恒压反应热与焓}
+恒压条件下，体积功$W=-p\Delta V$，代入热力学第一定律：
+\[
+Q_p = \Delta_{\text{r}}U + p\Delta V
+\]
+定义\textbf{焓}（热焓）$H=U+pV$，则恒压反应热与焓变的关系为：
+\[
+Q_p = \Delta_{\text{r}}H
+\]
+式中：$\Delta_{\text{r}}H=H_{\text{生}}-H_{\text{反}}$为反应的焓变，$H$为状态函数、广度性质。
+
+\subsubsection{反应进度}
+对于化学反应$\sum_{\text{B}}\nu_{\text{B}}\text{B}=0$（$\nu_{\text{B}}$为化学计量数，反应物为负，产物为正），反应进度$\xi$的定义为：
+\[
+\xi = \frac{n_{\text{B}}(\xi) - n_{\text{B}}(0)}{\nu_{\text{B}}}
+\]
+当$\xi=\qty{1}{\mole}$时，表示按化学计量数完成了$\qty{1}{\mole}$的反应。
+
+\subsubsection{恒容与恒压反应热的关系}
+摩尔反应热（反应进度为$\qty{1}{\mole}$时的热效应）分别为$\Delta_{\text{r}}H_{\text{m}}=\frac{\Delta_{\text{r}}H}{\xi}$和$\Delta_{\text{r}}U_{\text{m}}=\frac{\Delta_{\text{r}}U}{\xi}$。结合$\Delta(pV)=\Delta nRT$（$\Delta n$为气体物质的量变化），推导得：
+\[
+\Delta_{\text{r}}H_{\text{m}} = \Delta_{\text{r}}U_{\text{m}} + \Delta\nu RT
+\]
+式中：$\Delta\nu=\sum_{\text{产物}}\nu_{\text{产物}}-\sum_{\text{反应物}}\nu_{\text{反应物}}$，$R$为摩尔气体常数，$T$为温度。
+
+\subsection{盖斯定律}
+\subsubsection{热化学方程式}
+标明反应热、物质聚集状态及反应条件的化学方程式称为热化学方程式。例如：
+\[
+\ce{H2(g) + 0.5O2(g) = H2O(l)} \quad \Delta_{\text{r}}H_{\text{m}}^\ominus = -285.8\ \si{\kilo\joule\per\mole}
+\]
+式中：$\ominus$表示标准状态，聚集状态用$\text{g}$（气态）、$\text{l}$（液态）、$\text{s}$（固态）标注。
+
+\subsubsection{盖斯定律}
+1840年俄国化学家盖斯提出：\textbf{定压或定容条件下，化学反应的热效应仅取决于体系的始态和终态，与反应途径无关}。即总反应的热效应等于各分步反应热效应之和：
+\[
+\Delta_{\text{r}}H = \Delta_{\text{r}}H_1 + \Delta_{\text{r}}H_2 + \dots + \Delta_{\text{r}}H_n
+\]
+
+\subsection{生成热}
+\subsubsection{标准摩尔生成热}
+\begin{itemize}
+    \item \textbf{定义}：在标准状态下（$p^\ominus=100\ \text{kPa}$，指定温度$T$），由最稳定单质生成$\qty{1}{\mole}$纯物质的反应焓变，用$\Delta_{\text{f}}H_{\text{m}}^\ominus$表示，单位为$\si{\kilo\joule\per\mole}$。
+    \item \textbf{规定}：最稳定单质的标准摩尔生成热为$0$（如$\ce{H2(g)}$、$\ce{O2(g)}$）。
+\end{itemize}
+
+\subsubsection{标准生成热的应用}
+反应的标准摩尔焓变可通过反应物和产物的标准生成热计算：
+\[
+\Delta_{\text{r}}H_{\text{m}}^\ominus = \sum_{\text{产物}}\nu_{\text{产物}}\Delta_{\text{f}}H_{\text{m}}^\ominus(\text{产物}) - \sum_{\text{反应物}}\left|\nu_{\text{反应物}}\right|\Delta_{\text{f}}H_{\text{m}}^\ominus(\text{反应物})
+\]
+
+\subsection{燃烧热}
+\textbf{标准摩尔燃烧热}：在标准状态下，$1~\text{mol}$物质完全燃烧生成规定产物（如$\ce{CO2(g)}$、$\ce{H2O(l)}$、$\ce{N2(g)}$等）的焓变，用$\Delta_{\text{c}}H_{\text{m}}^\ominus$表示。
+
+\textbf{反应焓变计算}：
+\[
+\Delta_{\text{r}}H_{\text{m}}^\ominus = \sum_{\text{反应物}}\nu_{\text{反应物}}\Delta_{\text{c}}H_{\text{m}}^\ominus(\text{反应物}) - \sum_{\text{产物}}\nu_{\text{产物}}\Delta_{\text{c}}H_{\text{m}}^\ominus(\text{产物})
+\]
+
+\subsection{从键能估算反应热}
+化学反应的热效应本质是化学键断裂与形成的能量差，近似计算公式为：
+\[
+\Delta_{\text{r}}H \approx \sum E_{\text{反应物键能}} - \sum E_{\text{产物键能}}
+\]
+式中：$E$为键能，键断裂吸热（$+E$），键形成放热（$-E$）。
+
+
+\section{化学反应的方向}
+
+\subsection{过程进行的方式}
+\subsubsection{体积功与途径的关系}
+不同途径下体系做的体积功不同，其中可逆途径的体积功最大。常见途径的体积功计算：
+\begin{itemize}
+    \item 恒外压一次膨胀：$W=-p_{\text{外}}(V_2-V_1)$
+    \item 可逆膨胀（恒温）：$W=-nRT\ln\dfrac{V_2}{V_1}$
+\end{itemize}
+
+\subsubsection{可逆途径}
+\textbf{可逆途径}是指体系与环境无限接近平衡态，过程无限缓慢，反向进行时体系和环境均可恢复原状的途径，是热力学中的理想途径。
+
+\subsection{反应方向的判据基础}
+\subsubsection{焓变的局限性}
+多数放热反应（$\Delta H<0$）可自发进行，但部分吸热反应（如$\ce{KNO3(s)}$溶解、冰熔化）也能自发，说明焓变并非判断反应方向的唯一依据。
+
+\subsubsection{熵与混乱度}
+\begin{description}
+    \item[混乱度] 体系内部粒子排列的无序程度，混乱度越大，体系稳定性越高。
+    \item[熵] 描述混乱度的状态函数，用$S$表示，单位为$
+\si{\joule\per\mole\per\kelvin}$。混乱度越大，熵值越大。
+    \item[玻尔兹曼公式] 熵与微观状态数$\varOmega$（体系可能的微观存在形式总数）的关系为：
+    \[
+    S = k\ln\varOmega
+    \]
+    式中：$k$为玻尔兹曼常数。
+\end{description}
+
+\subsubsection{热力学第三定律与标准熵}
+\begin{description}
+    \item[热力学第三定律] 绝对零度（\qty{0}{\kelvin}）时，任何纯物质完整晶体的熵值为$0$（$S_0=0$）。
+    \item[标准摩尔熵] 标准状态下$\qty{1}{\mole}$物质的熵值，用$S_{\text{m}}^\ominus$表示，最稳定单质的$S_{\text{m}}^\ominus\neq0$。
+\end{description}
+
+\subsubsection{熵变的计算与判断}
+\begin{description}
+    \item[反应熵变计算]
+    \[
+    \Delta_{\text{r}}S_{\text{m}}^\ominus = \sum_{\text{产物}}\nu_{\text{产物}}S_{\text{m}}^\ominus(\text{产物}) - \sum_{\text{反应物}}|\nu_{\text{反应物}}|S_{\text{m}}^\ominus(\text{反应物})
+    \]
+    \item[熵变判断] 气体物质的量增加、固体溶解、温度升高、混乱度增大的过程，$\Delta S>0$。
+\end{description}
+
+\subsubsection{熵判据}
+\begin{description}
+    \item[孤立体系] 自发过程总是向熵增大的方向进行，即：
+    \begin{itemize}
+        \item $\Delta S_{\text{孤}}>0$：自发过程；
+        \item $\Delta S_{\text{孤}}=0$：平衡状态；
+        \item $\Delta S_{\text{孤}}<0$：非自发过程。
+    \end{itemize}
+    \item[非孤立体系] 需用总熵变$\Delta S_{\text{总}}=\Delta S_{\text{体}}+\Delta S_{\text{环}}$判断，$\Delta S_{\text{总}}>0$为自发过程。
+\end{description}
+
+\subsection{吉布斯自由能}
+\subsubsection{定义与表达式}
+为简化非孤立体系的方向判断，定义吉布斯自由能：
+\[
+G = H - TS
+\]
+式中：$G$为状态函数、广度性质，单位为$
+\si{\kilo\joule\per\mole}$。恒温恒压下，吉布斯自由能变为：
+\[
+\Delta G = \Delta H - T\Delta S
+\]
+该式称为吉布斯等温方程。
+
+\subsubsection{吉布斯自由能判据}
+恒温恒压、仅做体积功的条件下，反应方向判据为：
+\begin{itemize}
+    \item $\Delta G<0$：反应自发进行；
+    \item $\Delta G=0$：反应达到平衡状态；
+    \item $\Delta G>0$：反应非自发进行（反向自发）。
+\end{itemize}
+
+\subsubsection{温度对反应方向的影响}
+根据$\Delta G=\Delta H-T\Delta S$，温度$T$对反应方向的影响取决于$\Delta H$和$\Delta S$的符号组合，具体分类如下表：
+
+\begin{table}[ht]
+\centering
+\small
+\caption*{吉布斯自由能判据中反应类型与方向关系}
+\begin{tabular}{cccc}
+\toprule
+类型       & $\Delta H$ & $\Delta S$ & 反应方向特征 \\
+\midrule
+焓减熵增型 & $<0$       & $>0$       & 任意温度下均自发 \\
+焓减熵减型 & $<0$       & $<0$       & 低温自发，高温非自发 \\
+焓增熵增型 & $>0$       & $>0$       & 高温自发，低温非自发 \\
+焓增熵减型 & $>0$       & $<0$       & 任意温度下均非自发 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{转向温度}
+反应由自发转为非自发（或反之）的温度称为转向温度$T_{\text{转}}$，此时$\Delta G=0$，故：
+\[
+T_{\text{转}} = \frac{\Delta H}{\Delta S}
+\]
+
+\subsubsection{标准摩尔生成吉布斯自由能}
+\begin{description}
+    \item[定义] 标准状态下，由最稳定单质生成$\qty{1}{\mole}$物质的吉布斯自由能变，用$\Delta_{\text{f}}G_{\text{m}}^\ominus$表示，单位为$\si{\kilo\joule\per\mole}$。
+    \item[规定] 最稳定单质的$\Delta_{\text{f}}G_{\text{m}}^\ominus=0$。
+\end{description}
+
+\subsubsection{标准反应吉布斯自由能变的计算}
+\begin{enumerate}
+    \item 由$\Delta_{\text{f}}G_{\text{m}}^\ominus$计算：
+    \[
+    \Delta_{\text{r}}G_{\text{m}}^\ominus = \sum_{\text{产物}}\nu_{\text{产物}}\Delta_{\text{f}}G_{\text{m}}^\ominus(\text{产物}) - \sum_{\text{反应物}}|\nu_{\text{反应物}}|\Delta_{\text{f}}G_{\text{m}}^\ominus(\text{反应物})
+    \]
+    \item 由吉布斯等温方程计算（近似$\Delta H^\ominus\approx\Delta H_{298}^\ominus$，$\Delta S^\ominus\approx\Delta S_{298}^\ominus$）：
+    \[
+    \Delta_{\text{r}}G_{\text{m}}^\ominus(T) \approx \Delta_{\text{r}}H_{\text{m}}^\ominus(\qty{298}{\kelvin}) - T\Delta_{\text{r}}S_{\text{m}}^\ominus(\qty{298}{\kelvin})
+    \]
+\end{enumerate}
+
+\subsection{非标准状态下反应方向的判断}
+非标准状态下，反应的吉布斯自由能变由热力学等温方程计算：
+\[
+\Delta_{\text{r}}G_{\text{m},T} = \Delta_{\text{r}}G_{\text{m},T}^\ominus + RT\ln Q
+\]
+式中：$Q$为反应商，$R=\qty{8.314}{\joule\per\mole\per\kelvin}$，$T$为温度。
+
+\subsubsection{反应商$Q$的表达式}
+\begin{description}
+    \item[气体反应]（用相对分压$p_i/p^\ominus$表示）：  
+    对于$\ce{a A(g) + b B(g) = g G(g) + h H(g)}$，
+    \[
+    Q = \frac{\left(\frac{p_G}{p^\ominus}\right)^g \left(\frac{p_H}{p^\ominus}\right)^h}{\left(\frac{p_A}{p^\ominus}\right)^a \left(\frac{p_B}{p^\ominus}\right)^b}
+    \]
+    \item[溶液反应]（用相对浓度$c_i/c^\ominus$表示）：  
+    对于$\ce{a A(aq) + b B(aq) = g G(aq) + h H(aq)}$，
+    \[
+    Q = \frac{\left(\frac{c_G}{c^\ominus}\right)^g \left(\frac{c_H}{c^\ominus}\right)^h}{\left(\frac{c_A}{c^\ominus}\right)^a \left(\frac{c_B}{c^\ominus}\right)^b}
+    \]
+\end{description}
+注：固体和纯液体不列入反应商表达式。
+
+\subsubsection{非标准态判据}
+通过热力学等温方程计算$\Delta_{\text{r}}G_{\text{m},T}$，按以下规则判断：
+\begin{itemize}
+    \item $\Delta_{\text{r}}G_{\text{m},T}<0$：反应自发进行；
+    \item $\Delta_{\text{r}}G_{\text{m},T}=0$：反应达到平衡；
+    \item $\Delta_{\text{r}}G_{\text{m},T}>0$：反应非自发进行。
+\end{itemize}
